@@ -1,4 +1,4 @@
-﻿
+﻿@model Contact
 @{
     ViewData["Title"] = "ContactUs";
 }
@@ -41,22 +41,34 @@
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-6 d-flex align-items-center mb-4">
                     <div class="w-100">
-                        <form class="pl-lg-2" action="#">
+                        <form class="pl-lg-2" method="post">
+
                             <h4 class="ls-m font-weight-bold">Let’s Connect</h4>
+                            @if (!string.IsNullOrWhiteSpace(ViewBag.Message)) {
+
+                                <p class="alert alert-info">
+                                    @ViewBag.Message
+                                </p>
+                            };
+
                             <p>
                                 Your email address will not be published. Required fields are
                                 marked *
                             </p>
                             <div class="row mb-2">
+                                
+                                <div class="col-md-6 mb-4">
+                                    <input class="form-control" type="text" placeholder="Name *" asp-for="Name">
+                                    <span class="text-danger" asp-validation-for="Name"></span>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <input class="form-control" type="email" placeholder="Email *" asp-for="Email">
+                                    <span class="text-danger" asp-validation-for="Email"></span>
+                                </div>
                                 <div class="col-12 mb-4">
-                                    <textarea class="form-control" required
+                                    <textarea class="form-control" asp-for="Message"
                                               placeholder="Comment*"></textarea>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input class="form-control" type="text" placeholder="Name *" required>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <input class="form-control" type="email" placeholder="Email *" required>
+                                    <span class="text-danger" asp-validation-for="Message"></span>
                                 </div>
                             </div>
                             <button class="btn btn-dark btn-rounded">

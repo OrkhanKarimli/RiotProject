@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Riod.WebUI.Models.DbContexts;
+using Riod.WebUI.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +11,11 @@ namespace Riod.WebUI.Controllers
 {
     public class HomeController : Controller
     {
+        readonly RiodeDbContext db;
+        public HomeController(RiodeDbContext db)
+        {
+            this.db = db;
+        }
         public IActionResult Index()
         {
             return View();
@@ -19,6 +27,20 @@ namespace Riod.WebUI.Controllers
         public IActionResult ContactUs()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult ContactUs(Contact contact)
+        {
+            if (ModelState.IsValid)
+            {
+            db.Contacts.Add(contact);
+            db.SaveChanges();
+                ModelState.Clear();
+                ViewBag.Message = "Mesaj qebul edilmisdir size geri donus edilecek!";
+                return View();
+            }
+            
+            return View(contact);
         }
         public IActionResult Faqs()
         {
