@@ -42,7 +42,8 @@
     <!-- Main CSS File -->
     <link href="~/assets/css/style.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/assets/css/demo23.min.css">
-    
+    @RenderSection("addcss", required: false);
+
 </head>
 
 <body class="home">
@@ -669,6 +670,7 @@
 
         });
     </script>*@
+    @RenderSection("addjs", required: false);
 </body>
 
 

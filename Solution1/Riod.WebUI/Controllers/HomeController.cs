@@ -36,11 +36,23 @@ namespace Riod.WebUI.Controllers
             db.Contacts.Add(contact);
             db.SaveChanges();
                 ModelState.Clear();
-                ViewBag.Message = "Mesaj qebul edilmisdir size geri donus edilecek!";
-                return View();
+                //ViewBag.Message = "Mesaj qebul edilmisdir size geri donus edilecek!";
+                //return View();
+                return Json(new {
+                    error = false,
+                    message = "Mesaj qebul edilmisdir size geri donus edilecek!"
+
+                }) ;
+
             }
-            
-            return View(contact);
+
+            //return View(contact);
+            return Json(new
+            {
+                error = true,
+                message = "Melumatlari duzgun daxil edin!"
+
+            });
         }
         public IActionResult Faqs()
         {

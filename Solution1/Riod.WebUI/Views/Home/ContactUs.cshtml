@@ -41,10 +41,11 @@
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-6 d-flex align-items-center mb-4">
                     <div class="w-100">
-                        <form class="pl-lg-2" method="post">
+                        <form id="formpost" class="pl-lg-2" method="post">
 
                             <h4 class="ls-m font-weight-bold">Let’s Connect</h4>
-                            @if (!string.IsNullOrWhiteSpace(ViewBag.Message)) {
+                            @if (!string.IsNullOrWhiteSpace(ViewBag.Message))
+                            {
 
                                 <p class="alert alert-info">
                                     @ViewBag.Message
@@ -56,7 +57,7 @@
                                 marked *
                             </p>
                             <div class="row mb-2">
-                                
+
                                 <div class="col-md-6 mb-4">
                                     <input class="form-control" type="text" placeholder="Name *" asp-for="Name">
                                     <span class="text-danger" asp-validation-for="Name"></span>
@@ -153,5 +154,52 @@
     <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
     <div class="grey-section google-map" id="googlemaps" style="height: 386px"></div>
     <!-- End Map Section -->
+    @section addcss{ 
+        <link href="~/libs/toastr.js/toastr.css" rel="stylesheet" />
+    }
+
+
+    @section addjs{
+        <script src="~/libs/jquery-validate/jquery.validate.min.js"></script>
+        <script src="~/libs/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+        <script src="~/libs/toastr.js/toastr.min.js"></script>
+        <script src="~/libs/toastr.js/toastr.cust.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            $('#formpost')
+                
+                .submit(function (e) {
+                    e.preventDefault();
+                    if ($(e.currentTarget).valid() == false){
+                        return;
+                    }
+                let formdt = new FormData(e.currentTarget);
+                $.ajax({
+                    
+                    type: "POST",
+                    url:'@Url.Action("ContactUs")',
+                    data: formdt,
+                    contentType: false,
+                    processData: false,
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.error == false) {
+                            e.currentTarget.reset();
+                            Command: toastr["success"](response.message, "Success")
+                            return;
+                        }
+                        Command: toastr["error"](response.message, "Error")
+                        
+                    },
+                    error: function (response) {
+                        
+                        Command: toastr["error"]('Emeliyyat ugursuzdur!', "Error")
+                    }
+                });
+                })
+                .validate()
+})
+        </script>
+    };
 </div>
 
