@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Riod.WebUI.Models.DbContexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,11 @@ namespace Riod.WebUI
             services.AddRouting(cfg =>
             {
                 cfg.LowercaseUrls = true;
+            });
+            services.AddDbContext<RiodeDbContext>(cfg =>
+            {
+                string ConnectinSrting = configuration.GetConnectionString("cstring");
+                cfg.UseSqlServer(ConnectinSrting);
             });
         }
 
