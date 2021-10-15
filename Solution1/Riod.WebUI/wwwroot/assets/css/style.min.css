@@ -12916,22 +12916,19 @@ aside + div .product-single .product-details {
         .header-search.hs-simple input.form-control {
             padding: 0 5rem 0 1.55rem;
             border-radius: 5px;
-            border: 2px solid;
-            border-color: #26c;
             font-family: inherit;
             background-color: #fff;
             color: #999;
         }
-
-        .header-search.hs-simple .btn-search {
-            position: absolute;
-            background: transparent;
-            color: #333;
-            min-width: 48px;
-            height: 100%;
-            border-radius: 5px;
-            right: 0;
-        }
+            .header-search.hs-simple .btn-search {
+                position: absolute;
+                background: transparent;
+                color: #333;
+                min-width: 48px;
+                height: 100%;
+                border-radius: 5px;
+                right: 0;
+            }
 
             .header-search.hs-simple .btn-search:hover {
                 color: #26c;

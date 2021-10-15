@@ -40,7 +40,9 @@
     <link rel="stylesheet" type="text/css" href="~/assets/vendor/owl-carousel/owl.carousel.min.css">
 
     <!-- Main CSS File -->
+    <link href="~/assets/css/style.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/assets/css/demo23.min.css">
+    
 </head>
 
 <body class="home">
@@ -553,7 +555,7 @@
                         <li><a asp-controller="Home" asp-action="AboutUs">About</a></li>
                         <li><a asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
                         <li><a href="account.html">Login</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a asp-controller="Home" asp-action="Faqs">FAQs</a></li>
                         <li><a href="error-404.html">Error 404</a></li>
                         <li><a href="coming-soon.html">Coming Soon</a></li>
                     </ul>

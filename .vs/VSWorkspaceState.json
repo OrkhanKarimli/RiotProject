@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Solution1"
+    "\\Solution1",
+    "\\Solution1\\Riod.WebUI",
+    "\\Solution1\\Riod.WebUI\\Views",
+    "\\Solution1\\Riod.WebUI\\Views\\Shared",
+    "\\Solution1\\Riod.WebUI\\wwwroot",
+    "\\Solution1\\Riod.WebUI\\wwwroot\\assets",
+    "\\Solution1\\Riod.WebUI\\wwwroot\\assets\\css",
+    "\\Templates",
+    "\\Templates\\riode-ui"
   ],
+  "SelectedNode": "\\Solution1\\Riod.WebUI\\wwwroot\\assets\\css\\style.min.css",
   "PreviewInSolutionExplorer": false
 }
