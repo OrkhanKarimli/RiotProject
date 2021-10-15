@@ -1,7 +1,1388 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
+  
 }
 
-<h1>Index</h1>
+<div class="page-content">
+    <section class="intro-slider animation-slider owl-carousel owl-theme owl-nav-bg owl-dot-inner row cols-1 gutter-no"
+             data-owl-options="{
+                    'items': 1,
+                    'loop': false,
+                    'responsive': {
+                        '992': {
+                            'dots': false,
+                            'nav': true
+                        }
+                    },
+                    'animateIn': 'fadeIn',
+                    'animateOut': 'fadeOut'
+                }">
+        <div class="intro-slide1 banner banner-fixed" style="background-color: #f0f0f0">
+            <figure>
+                <img src="~/assets/images/demos/demo23/slides/1.jpg" alt="banner" width="1903" height="469" />
+            </figure>
+            <div class="container">
+                <div class="banner-content ml-lg-2 y-50">
+                    <div class="slide-animate"
+                         data-animation-options="{'name': 'flipInY', 'duration': '.8s'}">
+                        <h4 class="banner-subtitle text-uppercase">Performance &amp; Lifestyle</h4>
+                        <h3 class="banner-title ls-m text-dark font-weight-bolder">
+                            <span class="font-weight-bold text-primary ls-s">Introducing</span><br />Fashion
+                            Lifestyle<br />Collection
+                        </h3>
+                        <a href="demo23-shop.html" class="btn btn-dark btn-outline btn-rounded mb-1">
+                            Shop
+                            now <i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-slide2 banner banner-fixed" style="background-color: #ececf3">
+            <figure>
+                <img src="~/assets/images/demos/demo23/slides/2.jpg" alt="banner" width="1903" height="469" />
+            </figure>
+            <div class="container">
+                <div class="banner-content ml-auto y-50 mr-0">
+                    <div class="slide-animate"
+                         data-animation-options="{'name': 'blurIn', 'duration': '.8s'}">
+                        <h4 class="banner-subtitle text-uppercase text-primary">Professional</h4>
+                        <h3 class="banner-title ls-s font-weight-bold">
+                            Pulseira Inteligente <br />Smart Band
+                            5
+                        </h3>
+                        <a href="demo23-shop.html" class="btn btn-dark btn-outline btn-rounded mb-1">
+                            Shop
+                            now <i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-wrapper container mt-10 pt-6 appear-animate">
+        <div class="title-wrapper d-flex align-items-center mb-5 with-link">
+            <h2 class="title title-simple text-left mb-0 ls-normal">Deals of the Week</h2>
+            <div class="countdown-container d-flex align-items-center font-weight-semi-bold text-white">
+                <label>Ends In:</label>
+                <div class="countdown countdown-compact" data-format="HMS" data-until="+10h"
+                     data-relative="true" data-compact="true">00:00:00</div>
+            </div>
+            <a href="#" class="">View All Products<i class="d-icon-arrow-right"></i></a>
+        </div>
+        <div class="owl-carousel owl-theme row cols-xl-5 cols-lg-4 cols-md-3 cols-2 gutter-xs"
+             data-owl-options="{
+                        'items': 5,
+                        'loop': false,
+                        'margin': 10,
+                        'responsive': {
+                            '0': {
+                                'items': 2
+                            },
+                            '768': {
+                                'items': 3
+                            },
+                            '992': {
+                                'items': 4
+                            },
+                            '1200': {
+                                'items': 5
+                            }
+                        }
+                    }">
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/1.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/1-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Modern Fashionale Bag</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$45.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 2 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/2.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/2-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Comfor Sandle</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$23.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 3 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/3.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/3-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Super Pixel Camera</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$14.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 4 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/4.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/4-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Modern Vaccum Machine</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$65.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 3 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/5.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/5-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Tiny Casual Audio</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$35.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 4 )</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories container mt-10 pt-2">
+        <h2 class="title title-simple text-left pb-1">Popular Categories</h2>
+        <div class="owl-carousel owl-theme" data-owl-options="{
+                        'nav': false,
+                        'dots': true,
+                        'items': 4,
+                        'margin':  20,
+                        'loop': false,
+                        'responsive': {
+                            '0': {
+                                'items': 1
+                            },
+                            '576': {
+                                'items': 2
+                            },
+                            '992': {
+                                'items': 3
+                            }
+                        }
+                    }">
+            <div class="category category-group-icon appear-animate" style="background-color: #4b5577">
+                <a href="demo23-shop.html" class="mb-2">
+                    <figure class="category-media">
+                        <i class="d-icon-t-shirt1" style="font-size: 6.8rem; margin: 0 0 1.4rem;"></i>
+                    </figure>
+                    <h4 class="category-name">Clothing</h4>
+                </a>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><a href="demo23-shop.html">Hats</a></li>
+                        <li><a href="demo23-shop.html">Men's Necklace</a></li>
+                        <li><a href="demo23-shop.html">Pendant</a></li>
+                        <li><a href="demo23-shop.html">Shirts</a></li>
+                        <li><a href="demo23-shop.html">Traveller</a></li>
+                        <li><a href="demo23-shop.html">Trousers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="category category-group-icon appear-animate" style="background-color: #6d52af">
+                <a href="demo23-shop.html">
+                    <figure class="category-media">
+                        <i class="d-icon-basketball2"></i>
+                    </figure>
+                    <h4 class="category-name">Sporting Goods</h4>
+                </a>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><a href="demo23-shop.html">Caps</a></li>
+                        <li><a href="demo23-shop.html">Shoes</a></li>
+                        <li><a href="demo23-shop.html">Ski Accessories</a></li>
+                        <li><a href="demo23-shop.html">Sport balls</a></li>
+                        <li><a href="demo23-shop.html">Sportswear</a></li>
+                        <li><a href="demo23-shop.html">Watches</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="category category-group-icon appear-animate" style="background-color: #3366cc">
+                <a href="demo23-shop.html">
+                    <figure class="category-media">
+                        <i class="d-icon-backpack"></i>
+                    </figure>
+                    <h4 class="category-name">Bag &amp; Backpack</h4>
+                </a>
+                <div class="category-content">
+                    <ul class="category-list">
+                        <li><a href="demo23-shop.html">Backpack</a></li>
+                        <li><a href="demo23-shop.html">Fashion</a></li>
+                        <li><a href="demo23-shop.html">Handbag</a></li>
+                        <li><a href="demo23-shop.html">Purse bag</a></li>
+                        <li><a href="demo23-shop.html">Sale</a></li>
+                        <li><a href="demo23-shop.html">Travel Bag</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-wrapper container mt-10 pt-6">
+        <h2 class="title title-simple text-left with-link">
+            Sporting Goods<a href="demo23-shop.html">
+                View All
+                Products<i class="d-icon-arrow-right"></i>
+            </a>
+        </h2>
+        <div class="product-grid row gutter-sm">
+            <div class="height-x2">
+                <div class="banner banner-fixed">
+                    <figure>
+                        <img src="~/assets/images/demos/demo23/banner/1.jpg" alt="banner" width="340" height="593" />
+                    </figure>
+                    <div class="banner-content appear-animate" data-animation-options="{
+                                    'name': 'fadeInDownShorter'
+                                }">
+                        <h4 class="banner-subtitle ls-m text-uppercase">
+                            Winter
+                            season's
+                        </h4>
+                        <h3 class="banner-title ls-s font-weight-bold">Discover Our Ski<br />Equipments</h3>
+                        <a href="demo23-shop.html" class="btn btn-white btn-shadow-sm">
+                            Shop now <i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/6.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Advanced Headphone</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$55.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 1 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/7.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Black Basketball</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$39.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 4 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/2.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Comfor Sandle</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$35.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 2 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/9.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Comfortable Audio</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$37.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 1 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/10.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Converse Blue Training Shoes</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$36.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 1 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/11.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Converse Kids Star Suede Shoes</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$35.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 2 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/12.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Ski shoes</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$39.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/13.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Perfect trainer</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$35.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 2 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-10">
+        <div class="banner1 banner" style="background-color: #27272c;">
+            <figure>
+                <img src="~/assets/images/demos/demo23/banner/3.jpg" alt="">
+            </figure>
+            <div class="banner-content y-50" style="transform-origin: 25%">
+                <div class="appear-animate" data-animation-options="{
+                                'name': 'blurIn'
+                            }">
+                    <h4 class="banner-subtitle text-white font-weight-normal">Accessories for</h4>
+                    <h3 class="banner-title d-inline-block text-white text-uppercase font-weight-bold mr-5 mb-0">
+                        Summer
+                        Season's
+                    </h3>
+                    <a href="demo23-shop.html" class="btn btn-white btn-link pb-2 pt-2 d-inline-block btn-infinite btn-slide-right">
+                        Shop
+                        now <i class="d-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-wrapper container mt-10 pt-5">
+        <h2 class="title title-simple with-link">
+            Electronics<a href="#">
+                View All Products<i class="d-icon-arrow-right"></i>
+            </a>
+        </h2>
+        <div class="product-grid row gutter-sm">
+            <div class="height-x2">
+                <div class="banner banner-fixed">
+                    <figure>
+                        <img src="~/assets/images/demos/demo23/banner/2.jpg" alt="banner" width="340" height="593" />
+                    </figure>
+                    <div class="banner-content appear-animate" data-animation-options="{
+                                    'name': 'fadeInDownShorter'
+                                }">
+                        <h4 class="banner-subtitle ls-m text-uppercase">Multiple Sports Modes</h4>
+                        <h3 class="banner-title ls-s font-weight-bold">
+                            Professional<br />
+                            Mi Smart Band 5C
+                        </h3>
+                        <a href="demo23-shop.html" class="btn btn-white btn-shadow-sm mb-1">
+                            Shop now <i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/14.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Canon Digital Speaker</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$26.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 5 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/15.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">XP Digital Watch</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$35.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 6 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/16.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Game Controller</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$45.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 4 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/17.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">High Capacity Recharge</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$35.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 3 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/18.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Nikos Digital Camera</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$52.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 5 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/19.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Sport Watch</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$35.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 3 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/20.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Super Sound Audio</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">$64.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 1 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="height-x1 appear-animate">
+                <div class="product text-center">
+                    <figure class="product-media">
+                        <a href="demo23-product.html">
+                            <img src="~/assets/images/demos/demo23/products/21.jpg" alt="product" width="234"
+                                 height="259">
+                        </a>
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                               data-target="#addCartModal" title="Add to cart">
+                                <i class="d-icon-bag"></i>
+                            </a>
+                            <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                                <i class="d-icon-heart"></i>
+                            </a>
+                        </div>
+                        <div class="product-action">
+                            <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                        </div>
+                    </figure>
+                    <div class="product-details">
+                        <h3 class="product-name">
+                            <a href="demo23-product.html">Water Proof Tablet</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="price">43.00</span>
+                        </div>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width:100%"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                            <a href="demo23-product.html" class="rating-reviews">( 1 )</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-10">
+        <div class="banner1 banner" style="background-color: #27272c;">
+            <figure>
+                <img src="~/assets/images/demos/demo23/banner/4.jpg" alt="">
+            </figure>
+            <div class="banner-content y-50" style="transform-origin: 25%">
+                <div class="appear-animate" data-animation-options="{
+                                'name': 'blurIn'
+                            }">
+                    <h4 class="banner-subtitle text-white font-weight-normal">Black Friday Sale</h4>
+                    <h3 class="banner-title d-inline-block text-white text-uppercase ls-s font-weight-bold mr-5 mb-0">
+                        Latest Power Bank
+                    </h3>
+                    <a href="demo23-shop.html" class="btn btn-white btn-link pb-2 pt-2 d-inline-block btn-infinite btn-slide-right">
+                        Shop
+                        now <i class="d-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-wrapper container mt-10 pt-5 appear-animate">
+        <h2 class="title title-simple text-left with-link">
+            Our Featured<a href="demo23-shop.html">
+                View All
+                Products<i class="d-icon-arrow-right"></i>
+            </a>
+        </h2>
+        <div class="owl-carousel owl-theme row cols-xl-5 cols-lg-4 cols-md-3 cols-2 gutter-xs"
+             data-owl-options="{
+                        'items': 5,
+                        'loop': false,
+                        'margin': 10,
+                        'responsive': {
+                            '0': {
+                                'items': 2
+                            },
+                            '768': {
+                                'items': 3
+                            },
+                            '992': {
+                                'items': 4
+                            },
+                            '1200': {
+                                'items': 5
+                            }
+                        }
+                    }">
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/22.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/22-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Fashion Twin Phone</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$35.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 3 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/5.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/5-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Tiny Casual Audio</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$35.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 5 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/24.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/24-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Multi-Functional Phone</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$35.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 1 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/25.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/25-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Tv Controller</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$35.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 6 )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product text-center">
+                <figure class="product-media">
+                    <a href="demo23-product.html">
+                        <img src="~/assets/images/demos/demo23/products/26.jpg" alt="product" width="300"
+                             height="332">
+                        <img src="~/assets/images/demos/demo23/products/26-1.jpg" alt="product" width="300"
+                             height="332">
+                    </a>
+                    <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart" data-toggle="modal"
+                           data-target="#addCartModal" title="Add to cart"><i class="d-icon-bag"></i></a>
+                        <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist">
+                            <i class="d-icon-heart"></i>
+                        </a>
+                    </div>
+                    <div class="product-action">
+                        <a href="#" class="btn-product btn-quickview" title="Quick View">Quick View</a>
+                    </div>
+                </figure>
+                <div class="product-details">
+                    <div class="product-cat">
+                        <a href="demo23-shop.html">categories</a>
+                    </div>
+                    <h3 class="product-name">
+                        <a href="demo23-product.html">Fashionable Brown Denim Shoes</a>
+                    </h3>
+                    <div class="product-price">
+                        <span class="price">$35.00</span>
+                    </div>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width:100%"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="demo23-product.html" class="rating-reviews">( 7 )</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog container mt-10 pt-2 mb-10 pb-10 appear-animate">
+        <h2 class="title title-simple text-left">From our Blog</h2>
+        <div class="owl-carousel owl-theme row cols-lg-4 cols-md-3 cols-sm-2 cols-1" data-owl-options="{
+                        'items': 4,
+                        'margin': 20,
+                        'loop': false,
+                        'responsive': {
+                            '0': {
+                                'items': 1
+                            },
+                            '576': {
+                                'items': 2
+                            },
+                            '768': {
+                                'items': 3
+                            },
+                            '992': {
+                                'items': 4
+                            }
+                        }
+                    }">
+            <div class="post overlay-zoom appear-animate overlay-dark" data-animation-options="{
+                            'name': 'zoomInShorter'
+                        }">
+                <figure class="post-media">
+                    <a href="post-single.html">
+                        <img src="~/assets/images/demos/demo23/blog/1.jpg" width="280" height="189" alt="post" />
+                    </a>
+                </figure>
+                <div class="post-details">
+                    <div class="post-meta">
+                        on <a href="post-single.html" class="post-date">September 6, 2020</a>
+                        &nbsp;|&nbsp; <a href="post-single.html" class="post-comment">
+                            <span>1</span>
+                            Comments
+                        </a>
+                    </div>
+                    <h3 class="post-title"><a href="post-single.html">Complete Set Of Ski Tools.</a></h3>
+                    <a href="post-single.html" class="btn btn-link btn-underline">
+                        Read More<i class="d-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="post overlay-zoom appear-animate overlay-dark" data-animation-options="{
+                            'name': 'zoomInShorter',
+                            'delay': '.2s'
+                        }">
+                <figure class="post-media">
+                    <a href="post-single.html">
+                        <img src="~/assets/images/demos/demo23/blog/2.jpg" width="280" height="189" alt="post" />
+                    </a>
+                </figure>
+                <div class="post-details">
+                    <div class="post-meta">
+                        on <a href="post-single.html" class="post-date">September 6, 2020</a>
+                        &nbsp;|&nbsp; <a href="post-single.html" class="post-comment">
+                            <span>1</span>
+                            Comments
+                        </a>
+                    </div>
+                    <h3 class="post-title"><a href="post-single.html">Utaliquam sollicitudin leo.</a></h3>
+                    <a href="post-single.html" class="btn btn-link btn-underline">
+                        Read More<i class="d-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="post overlay-zoom appear-animate overlay-dark" data-animation-options="{
+                            'name': 'zoomInShorter',
+                            'delay': '.3s'
+                        }">
+                <figure class="post-media">
+                    <a href="post-single.html">
+                        <img src="~/assets/images/demos/demo23/blog/3.jpg" width="280" height="189" alt="post" />
+                    </a>
+                </figure>
+                <div class="post-details">
+                    <div class="post-meta">
+                        on <a href="post-single.html" class="post-date">September 6, 2020</a>
+                        &nbsp;|&nbsp; <a href="post-single.html" class="post-comment">
+                            <span>1</span>
+                            Comments
+                        </a>
+                    </div>
+                    <h3 class="post-title"><a href="post-single.html">Fusce pellentesque suscipit.</a></h3>
+                    <a href="post-single.html" class="btn btn-link btn-underline">
+                        Read More<i class="d-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="post overlay-zoom appear-animate overlay-dark" data-animation-options="{
+                            'name': 'zoomInShorter',
+                            'delay': '.4s'
+                        }">
+                <figure class="post-media">
+                    <a href="post-single.html">
+                        <img src="~/assets/images/demos/demo23/blog/4.jpg" width="280" height="189" alt="post" />
+                    </a>
+                </figure>
+                <div class="post-details">
+                    <div class="post-meta">
+                        on <a href="post-single.html" class="post-date">September 6, 2020</a>
+                        &nbsp;|&nbsp; <a href="post-single.html" class="post-comment">
+                            <span>1</span>
+                            Comments
+                        </a>
+                    </div>
+                    <h3 class="post-title"><a href="post-single.html">Utaliquam sollicitudin leo</a></h3>
+                    <a href="post-single.html" class="btn btn-link btn-underline">
+                        Read More<i class="d-icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 

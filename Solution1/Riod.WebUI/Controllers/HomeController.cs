@@ -12,5 +12,9 @@ namespace Riod.WebUI.Controllers
         {
             return View();
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }
