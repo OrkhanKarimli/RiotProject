@@ -10,8 +10,8 @@ using Riod.WebUI.Models.DbContexts;
 namespace Riod.WebUI.Migrations
 {
     [DbContext(typeof(RiodeDbContext))]
-    [Migration("20211015131208_Init")]
-    partial class Init
+    [Migration("20211018163804_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,9 +41,42 @@ namespace Riod.WebUI.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Contacts");
+                });
+
+            modelBuilder.Entity("Riod.WebUI.Models.Entities.NBrand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CreatedbyUserId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DeletedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -51,7 +84,7 @@ namespace Riod.WebUI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Brands");
                 });
 #pragma warning restore 612, 618
         }

@@ -54,6 +54,36 @@ namespace Riod.WebUI.Migrations
 
                     b.ToTable("Contacts");
                 });
+
+            modelBuilder.Entity("Riod.WebUI.Models.Entities.NBrand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CreatedbyUserId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DeletedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
 #pragma warning restore 612, 618
         }
     }
