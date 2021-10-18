@@ -17,6 +17,7 @@ namespace Riod.WebUI.Models.DbContexts
 
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<NBrand> Brands { get; set; }
+        public DbSet<Color> Colors { get; set; }
 
     }
 }
