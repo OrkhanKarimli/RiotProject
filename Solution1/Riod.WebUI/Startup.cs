@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Riod.WebUI.Models.DbContexts;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -43,8 +44,17 @@ namespace Riod.WebUI
             };
             app.UseStaticFiles();
             app.UseRouting();
+            
             app.UseEndpoints(cfg =>
             {
+                cfg.MapGet("/coming-soon.html", async context =>
+                 {
+                     using (var sr= new StreamReader("views/static/coming-soon.html"))
+                     {
+                         context.Response.ContentType = "text/html";
+                       await context.Response.WriteAsync(sr.ReadToEnd());
+                     }
+                 });
                 cfg.MapControllerRoute("default", "{controller}/{action}/{id?}",
                     defaults: new
                     {
