@@ -1,4 +1,4 @@
-﻿@model List<NBrand>
+﻿@model ShowViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -35,23 +35,7 @@
                         <div class="sticky-sidebar">
                             <div class="widget widget-collapsible">
                                 <h3 class="widget-title">All Categories</h3>
-                                <ul class="widget-body filter-items search-ul">
-                                    <li><a href="#">Accessosries</a></li>
-                                    <li>
-                                        <a href="#">Bags</a>
-                                        <ul style="display: block">
-                                            <li><a href="#">Backpacks & Fashion Bags</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Electronics</a>
-                                        <ul>
-                                            <li><a href="#">Computer</a></li>
-                                            <li><a href="#">Gaming & Accessosries</a></li>
-
-
-                                        </ul>
-                                </ul>
+                                @Html.Raw(Model.Categories.GetCategoriesRaw());
                             </div>
                             <div class="widget widget-collapsible">
                                 <h3 class="widget-title">Filter by Price</h3>
@@ -75,25 +59,26 @@
                             <div class="widget widget-collapsible">
                                 <h3 class="widget-title">Size</h3>
                                 <ul class="widget-body filter-items">
-                                    <li><a href="#">Extra Large</a></li>
-                                    <li><a href="#">Large</a></li>
-                                    <li><a href="#">Medium</a></li>
-                                    <li><a href="#">Small</a></li>
+                                    @foreach (var item in Model.Products)
+                                    {
+                                        <li><a href="#">@item.Name</a></li>
+                                    }
                                 </ul>
+                                
                             </div>
                             <div class="widget widget-collapsible">
                                 <h3 class="widget-title">Color</h3>
                                 <ul class="widget-body filter-items">
-                                    <li><a href="#">Black</a></li>
-                                    <li><a href="#">Blue</a></li>
-                                    <li><a href="#">Green</a></li>
-                                    <li><a href="#">White</a></li>
+                                    @foreach (var item in Model.Colors)
+                                    {
+                                        <li><a href="#">@item.Name</a></li>
+                                    }
                                 </ul>
                             </div>
                             <div class="widget widget-collapsible">
                                 <h3 class="widget-title">Brands</h3>
                                 <ul class="widget-body filter-items">
-                                    @foreach (var item in Model)
+                                    @foreach (var item in Model.Brands)
                                     {
                                         <li><a href="#">@item.Name</a></li>
                                     }
