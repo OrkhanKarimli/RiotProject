@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
+using Riod.WebUI.Models.DbContexts;
+using Riod.WebUI.Models.Entities;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Riod.WebUI.Controllers
 {
@@ -10,7 +10,10 @@ namespace Riod.WebUI.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            RiodeDbContext db = new RiodeDbContext();
+            List<NBrand> nbrands = db.Brands.ToList();
+                  
+            return View(nbrands);
         }
         public IActionResult Details()
         {

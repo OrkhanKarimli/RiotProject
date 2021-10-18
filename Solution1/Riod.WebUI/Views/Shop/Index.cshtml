@@ -1,4 +1,4 @@
-﻿
+﻿@model List<NBrand>
 @{
     ViewData["Title"] = "Index";
 }
@@ -15,7 +15,7 @@
     <div class="page-content mb-10 pb-3">
         <div class="container">
             <div class="shop-boxed-banner banner mb-lg-6"
-                 style="background-image: url('assets/images/shop/banner2.jpg'); background-color: #f2f2f3;">
+                 style="background-image: url('/assets/images/shop/banner2.jpg'); background-color: #f2f2f3;">
                 <div class="banner-content">
                     <h4 class="banner-subtitle font-weight-bold ls-normal text-uppercase text-white">
                         Riode Shop
@@ -48,17 +48,9 @@
                                         <ul>
                                             <li><a href="#">Computer</a></li>
                                             <li><a href="#">Gaming & Accessosries</a></li>
+
+
                                         </ul>
-                                    </li>
-                                    <li><a href="#">For Fitness</a></li>
-                                    <li><a href="#">Home & Kitchen</a></li>
-                                    <li><a href="#">Men's</a></li>
-                                    <li><a href="#">Shoes</a></li>
-                                    <li><a href="#">Sporting Goods</a></li>
-                                    <li><a href="#">Summer Season's</a></li>
-                                    <li><a href="#">Travel & Clothing</a></li>
-                                    <li><a href="#">Watches</a></li>
-                                    <li><a href="#">Women’s</a></li>
                                 </ul>
                             </div>
                             <div class="widget widget-collapsible">
@@ -101,11 +93,10 @@
                             <div class="widget widget-collapsible">
                                 <h3 class="widget-title">Brands</h3>
                                 <ul class="widget-body filter-items">
-                                    <li><a href="#">Cinderella</a></li>
-                                    <li><a href="#">Comedy</a></li>
-                                    <li><a href="#">Rightcheck</a></li>
-                                    <li><a href="#">SkillStar</a></li>
-                                    <li><a href="#">SLS</a></li>
+                                    @foreach (var item in Model)
+                                    {
+                                        <li><a href="#">@item.Name</a></li>
+                                    }
                                 </ul>
                             </div>
                         </div>
