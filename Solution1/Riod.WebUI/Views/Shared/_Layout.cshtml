@@ -42,7 +42,7 @@
     <!-- Main CSS File -->
     <link href="~/assets/css/style.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/assets/css/demo23.min.css">
-    @RenderSection("addcss", required: false);
+    @RenderSection("addcss", required: false)
 
 </head>
 
@@ -557,8 +557,7 @@
                         <li><a asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
                         <li><a href="account.html">Login</a></li>
                         <li><a asp-controller="Home" asp-action="Faqs">FAQs</a></li>
-                        <li><a href="error-404.html">Error 404</a></li>
-                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                        
                     </ul>
                 </li>
                 <li>
@@ -569,7 +568,7 @@
                         <li>
                             <a href="#">Grid</a>
                             <ul>
-                                <li><a href="blog-grid-2col.html">Grid 2 columns</a></li>
+                                <li><a asp-controller="Blog" asp-action="Index">Grid 2 columns</a></li>
                                 <li><a href="blog-grid-3col.html">Grid 3 columns</a></li>
                                 <li><a href="blog-grid-4col.html">Grid 4 columns</a></li>
                                 <li><a href="blog-grid-sidebar.html">Grid sidebar</a></li>
@@ -578,7 +577,7 @@
                         <li>
                             <a href="#">Masonry</a>
                             <ul>
-                                <li><a href="blog-masonry-2col.html">Masonry 2 columns</a></li>
+                                <li><a asp-controller="Blog" asp-action="Index">Masonry 2 columns</a></li>
                                 <li><a href="blog-masonry-3col.html">Masonry 3 columns</a></li>
                                 <li><a href="blog-masonry-4col.html">Masonry 4 columns</a></li>
                                 <li><a href="blog-masonry-sidebar.html">Masonry sidebar</a></li>

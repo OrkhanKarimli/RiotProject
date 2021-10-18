@@ -1,0 +1,216 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<nav class="breadcrumb-nav">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="demo1.html"><i class="d-icon-home"></i></a></li>
+            <li><a href="#" class="active">Blog</a></li>
+            <li>Masonry 2 Columns</li>
+        </ul>
+    </div>
+</nav>
+<div class="page-content pb-10 mb-10">
+    <div class="container">
+        <ul class="nav-filters filter-underline blog-filters justify-content-center" data-target=".posts">
+            <li><a href="#" class="nav-filter active" data-filter="*">All</a><span>15</span></li>
+            <li><a href="#" class="nav-filter" data-filter=".fashion">Fashion</a><span>10</span></li>
+            <li><a href="#" class="nav-filter" data-filter=".lifestyle">Lifestyle</a><span>10</span></li>
+            <li><a href="#" class="nav-filter" data-filter=".shopping">Shopping</a><span>2</span></li>
+            <li><a href="#" class="nav-filter" data-filter=".sport">Sport</a><span>4</span></li>
+            <li><a href="#" class="nav-filter" data-filter=".summer-sale">Summer Sale</a><span>1</span></li>
+            <li><a href="#" class="nav-filter" data-filter=".travel">Travel</a><span>4</span></li>
+            <li><a href="#" class="nav-filter" data-filter=".winter-sale">Winter Sale</a><span>1</span></li>
+        </ul>
+        <div class="posts grid row">
+            <div class="grid-item col-sm-6 lifestyle shopping winter-sale">
+                <article class="post post-grid">
+                    <figure class="post-media overlay-zoom">
+                        <a asp-controller="blog" asp-action="detail">
+                            <img src="~/assets/images/blog/masonry/2col/1.jpg" width="580" height="300" alt="post" />
+                        </a>
+                    </figure>
+                    <div class="post-details">
+                        <div class="post-meta">
+                            on <a href="#" class="post-date">Jun 22, 2018</a>
+                            | <a href="#" class="post-comment"><span>2</span> Comments</a>
+                        </div>
+                        <h4 class="post-title">
+                            <a asp-controller="blog" asp-action="detail">
+                                Explore Fashion Trending For Women
+                                In Autumn
+                                2020
+                            </a>
+                        </h4>
+                        <p class="post-content">
+                            Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+                            eget blandit nunc tortor eu nibh. Suspenditus libero eu augue.
+                        </p>
+                        <a asp-controller="blog" asp-action="detail" class="btn btn-link btn-underline btn-primary">
+                            Read
+                            more<i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item col-sm-6 lifestyle sport">
+                <article class="post post-grid">
+                    <figure class="post-media overlay-zoom">
+                        <a asp-controller="blog" asp-action="detail">
+                            <img src="~/assets/images/blog/masonry/2col/2.jpg" width="580" height="400" alt="post" />
+                        </a>
+                    </figure>
+                    <div class="post-details">
+                        <div class="post-meta">
+                            on <a href="#" class="post-date">Nov 6, 2019</a>
+                            | <a href="#" class="post-comment"><span>7</span> Comments</a>
+                        </div>
+                        <h4 class="post-title">
+                            <a asp-controller="blog" asp-action="detail">Complete Set Of Ski Tools</a>
+                        </h4>
+                        <p class="post-content">
+                            Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+                            eget blandit nunc tortor eu nibh. Suspenditus libero eu augue.
+                        </p>
+                        <a asp-controller="blog" asp-action="detail" class="btn btn-link btn-underline btn-primary">
+                            Read
+                            more<i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item col-sm-6 fashion lifestyle">
+                <article class="post post-grid">
+                    <figure class="post-media overlay-zoom">
+                        <a asp-controller="blog" asp-action="detail">
+                            <img src="~/assets/images/blog/masonry/2col/3.jpg" width="580" height="400" alt="post" />
+                        </a>
+                    </figure>
+                    <div class="post-details">
+                        <div class="post-meta">
+                            on <a href="#" class="post-date">May 17, 2018</a>
+                            | <a href="#" class="post-comment"><span>4</span> Comments</a>
+                        </div>
+                        <h4 class="post-title">
+                            <a asp-controller="blog" asp-action="detail">
+                                Explore Fashion Ipad And
+                                Accessories
+                            </a>
+                        </h4>
+                        <p class="post-content">
+                            Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+                            eget blandit nunc tortor eu nibh. Suspenditus libero eu augue.
+                        </p>
+                        <a asp-controller="blog" asp-action="detail" class="btn btn-link btn-underline btn-primary">
+                            Read
+                            more<i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item col-sm-6 travel">
+                <article class="post post-grid">
+                    <figure class="post-media overlay-zoom">
+                        <a asp-controller="blog" asp-action="detail">
+                            <img src="~/assets/images/blog/masonry/2col/4.jpg" width="580" height="400" alt="post" />
+                        </a>
+                    </figure>
+                    <div class="post-details">
+                        <div class="post-meta">
+                            on <a href="#" class="post-date">Nov 18, 2019</a>
+                            | <a href="#" class="post-comment"><span>9 </span> Comments</a>
+                        </div>
+                        <h4 class="post-title">
+                            <a asp-controller="blog" asp-action="detail">
+                                Women's Trending Sunglasses And
+                                Clothing
+                            </a>
+                        </h4>
+                        <p class="post-content">
+                            Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+                            eget blandit nunc tortor eu nibh. Suspenditus libero eu augue.
+                        </p>
+                        <a asp-controller="blog" asp-action="detail" class="btn btn-link btn-underline btn-primary">
+                            Read
+                            more<i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item col-sm-6 travel hobbies summer-sale">
+                <article class="post post-grid overlay-zoom">
+                    <figure class="post-media">
+                        <a asp-controller="blog" asp-action="detail">
+                            <img src="~/assets/images/blog/masonry/2col/5.jpg" width="580" height="400" alt="post" />
+                        </a>
+                    </figure>
+                    <div class="post-details">
+                        <div class="post-meta">
+                            on <a href="#" class="post-date">Jun 6, 2019</a>
+                            | <a href="#" class="post-comment"><span>3</span> Comments</a>
+                        </div>
+                        <h4 class="post-title">
+                            <a asp-controller="blog" asp-action="detail">Women's Fashion Summer Dress</a>
+                        </h4>
+                        <p class="post-content">
+                            Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+                            eget blandit nunc tortor eu nibh. Suspenditus libero eu augue.
+                        </p>
+                        <a asp-controller="blog" asp-action="detail" class="btn btn-link btn-underline btn-primary">
+                            Read
+                            more<i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-item col-sm-6 hobbies">
+                <article class="post post-grid">
+                    <figure class="post-media overlay-zoom">
+                        <a asp-controller="blog" asp-action="detail">
+                            <img src="~/assets/images/blog/masonry/2col/6.jpg" width="580" height="300" alt="post" />
+                        </a>
+                    </figure>
+                    <div class="post-details">
+                        <div class="post-meta">
+                            on <a href="#" class="post-date">Nov 22, 2020</a>
+                            | <a href="#" class="post-comment"><span>9</span> Comments</a>
+                        </div>
+                        <h4 class="post-title">
+                            <a asp-controller="blog" asp-action="detail">
+                                The Best Choice For Spending
+                                Time
+                            </a>
+                        </h4>
+                        <p class="post-content">
+                            Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+                            eget blandit nunc tortor eu nibh. Suspenditus libero eu augue.
+                        </p>
+                        <a asp-controller="blog" asp-action="detail" class="btn btn-link btn-underline btn-primary">
+                            Read
+                            more<i class="d-icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="grid-space col-1"></div>
+        </div>
+        <ul class="pagination mt-5 justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1"
+                   aria-disabled="true">
+                    <i class="d-icon-arrow-left"></i>Prev
+                </a>
+            </li>
+            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item">
+                <a class="page-link page-link-next" href="#" aria-label="Next">
+                    Next<i class="d-icon-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
