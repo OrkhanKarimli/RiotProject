@@ -56,7 +56,8 @@ namespace Riod.WebUI.Controllers
         }
         public IActionResult Faqs()
         {
-            return View();
+            var fq = db.Faqs.Where(f => f.DeletedByUserId == null).ToList();
+            return View(fq);
         }
        
     }

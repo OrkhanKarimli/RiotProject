@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<Faq>
 @{
     ViewData["Title"] = "Faqs";
 }
@@ -18,329 +18,49 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mt-10">
+                <div class="col-md-12 mt-10">
                     <h2 class="title pl-2 pr-2 ls-m text-left">Customer Management</h2>
                     <div class="accordion accordion-border accordion-boxed accordion-plus">
+                        @foreach (var item in Model)
+                        {
                         <div class="card">
                             <div class="card-header">
-                                <a href="#collapse2-1" class="collapse">
-                                    How can add vendor role to the
-                                    customer?
+                                <a href="#collapse@(item.Id)" class="expand">
+                                    @item.Question
                                 </a>
                             </div>
-                            <div id="collapse2-1" class="expanded">
+                            <div id="collapse@(item.Id)" class="collapsed" style="display:none">
                                 <div class="card-body">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
+                                       @item.Answer
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-2" class="expand">What benefits a customer can take?</a>
-                            </div>
-                            <div id="collapse2-2" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-3" class="expand">How to change customer's address?</a>
-                            </div>
-                            <div id="collapse2-3" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        }
+                        
+               
                     </div>
                 </div>
-                <div class="col-md-6 mt-10">
-                    <h2 class="title pl-2 pr-2 ls-m">Product Type</h2>
-                    <div class="accordion accordion-border accordion-boxed accordion-plus">
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-1" class="collapse">
-                                    What is difference between simple &
-                                    variable product?
-                                </a>
-                            </div>
-                            <div id="collapse2-1" class="expanded">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-2" class="expand">
-                                    How to buy several products at
-                                    once?
-                                </a>
-                            </div>
-                            <div id="collapse2-2" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-3" class="expand">How to add downloadable product?</a>
-                            </div>
-                            <div id="collapse2-3" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mt-10">
-                    <h2 class="title pl-2 pr-2 ls-m">Ordering Products</h2>
-                    <div class="accordion accordion-border accordion-boxed accordion-plus">
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-1" class="collapse">
-                                    How can a guest order the
-                                    product?
-                                </a>
-                            </div>
-                            <div id="collapse2-1" class="expanded">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-2" class="expand">
-                                    What kind of payment methods are
-                                    available?
-                                </a>
-                            </div>
-                            <div id="collapse2-2" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-3" class="expand">What is benefit of paypal payment?</a>
-                            </div>
-                            <div id="collapse2-3" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-3" class="expand">How to register as a customer?</a>
-                            </div>
-                            <div id="collapse2-3" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-3" class="expand">
-                                    What is the preferable way to buy
-                                    product?
-                                </a>
-                            </div>
-                            <div id="collapse2-3" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-10">
-                    <h2 class="title pl-2 pr-2 ls-m">The Others</h2>
-                    <div class="accordion accordion-border accordion-boxed accordion-plus">
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-1" class="collapse">
-                                    How can I return an purchased item
-                                    online?
-                                </a>
-                            </div>
-                            <div id="collapse2-1" class="expanded">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-2" class="expand">How to add coupon code?</a>
-                            </div>
-                            <div id="collapse2-2" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-3" class="expand">How can I find theme style?</a>
-                            </div>
-                            <div id="collapse2-3" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <a href="#collapse2-3" class="expand">
-                                    What are the delivery types you can
-                                    use?
-                                </a>
-                            </div>
-                            <div id="collapse2-3" class="collapsed">
-                                <div class="card-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Donec odio.
-                                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-                                        Suspendisse
-                                        urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec
-                                        justo eget
-                                        felis facilisis fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
+@section addjs{ 
+    <script>
+        $(document).ready(function () {
+            const afn = $('.acardion')
+                .find('.card:first-child a')
+                .removeClass('expand')
+                .addClass('collapse')
+                .attr('href');
+            $(`${afn}`)
+                .removeClass('collapsed')
+                .addClass('expanded')
+                .css('display', 'block');
+        });
+    </script>
+}
 

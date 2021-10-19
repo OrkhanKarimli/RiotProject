@@ -31,6 +31,7 @@ namespace Riod.WebUI.Models.DbContexts
         public DbSet<Color> Colors { get; set; }
         public DbSet<ProductSize> Sizes { get; set; }
         public DbSet<Category> Pcategories { get; set; }
+        public DbSet<Faq> Faqs { get; set; }
 
     }
 }
