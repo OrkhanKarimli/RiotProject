@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 namespace Riod.WebUI.Areas.Admin.Controllers
 {
     [Area("admin")]
-    public class Colors : Controller
+    public class Size : Controller
     {
         readonly RiodeDbContext db;
-        public Colors(RiodeDbContext db)
+        public Size(RiodeDbContext db)
         {
             this.db = db;
         }
@@ -22,7 +22,7 @@ namespace Riod.WebUI.Areas.Admin.Controllers
         {
             var vdt = new ShowViewModel();
             
-            vdt.Colors = await db.Colors.Where(b => b.DeletedByUserId == null).ToListAsync();
+            vdt.Products = await db.Sizes.Where(b => b.DeletedByUserId == null).ToListAsync();
             return View(vdt);
         }
         public async Task<IActionResult> Details(int id)
@@ -31,7 +31,7 @@ namespace Riod.WebUI.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            var entity = await db.Colors.FirstOrDefaultAsync(b => b.Id == id);
+            var entity = await db.Sizes.FirstOrDefaultAsync(b => b.Id == id);
             if (entity == null)
             {
                 return NotFound();
@@ -44,11 +44,11 @@ namespace Riod.WebUI.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Color bd)
+        public async Task<IActionResult> Create(ProductSize bd)
         {
             if (ModelState.IsValid)
             {
-            db.Colors.Add(bd);
+            db.Sizes.Add(bd);
                 await db.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -60,7 +60,7 @@ namespace Riod.WebUI.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            var entity = await db.Colors.FirstOrDefaultAsync(b => b.Id == id);
+            var entity = await db.Sizes.FirstOrDefaultAsync(b => b.Id == id);
             if (entity ==null)
             {
                 return NotFound();
@@ -68,7 +68,7 @@ namespace Riod.WebUI.Areas.Admin.Controllers
             return View(entity);
         }
         [HttpPost]
-        public async Task<IActionResult> Edit([FromRoute]int id,Color bd)
+        public async Task<IActionResult> Edit([FromRoute]int id, ProductSize bd)
         {
             if (!ModelState.IsValid)
             {
@@ -78,13 +78,13 @@ namespace Riod.WebUI.Areas.Admin.Controllers
             {
                 return BadRequest();
             }
-            var entity = await db.Colors.FirstOrDefaultAsync(b => b.Id == id);
+            var entity = await db.Sizes.FirstOrDefaultAsync(b => b.Id == id);
             if (entity == null)
             {
                 return NotFound();
             }
             entity.Name = bd.Name;
-            entity.HexCode = bd.HexCode;
+            entity.Abbr = bd.Abbr;
             entity.Description = bd.Description;
             await db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -106,7 +106,7 @@ namespace Riod.WebUI.Areas.Admin.Controllers
 
                     );
             }
-            var entity = await db.Colors.FirstOrDefaultAsync(b => b.Id == id);
+            var entity = await db.Sizes.FirstOrDefaultAsync(b => b.Id == id);
             if (entity == null)
             {
                 return Json(
@@ -120,7 +120,7 @@ namespace Riod.WebUI.Areas.Admin.Controllers
                     );
             }
             entity.DeletedDate = DateTime.UtcNow.AddHours(4);
-            db.Colors.Remove(entity);
+            db.Sizes.Remove(entity);
             await db.SaveChangesAsync();
             return Json(
                   new
