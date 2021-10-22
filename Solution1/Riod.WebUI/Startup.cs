@@ -55,6 +55,11 @@ namespace Riod.WebUI
                        await context.Response.WriteAsync(sr.ReadToEnd());
                      }
                  });
+                cfg.MapAreaControllerRoute(
+           name: "areas",
+           areaName:"admin",
+           pattern: "admin/{controller=DashBoard}/{action=Index}/{id?}"
+         );
                 cfg.MapControllerRoute("default", "{controller}/{action}/{id?}",
                     defaults: new
                     {

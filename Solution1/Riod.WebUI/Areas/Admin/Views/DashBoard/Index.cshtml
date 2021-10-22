@@ -1,0 +1,602 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="page-body">
+    <div class="row">
+        <!-- task, page, download counter  start -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-c-yellow update-card">
+                <div class="card-block">
+                    <div class="row align-items-end">
+                        <div class="col-8">
+                            <h4 class="text-white">$30200</h4>
+                            <h6 class="text-white m-b-0">All Earnings</h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                            <canvas id="update-chart-1" height="75" style="display: block; height: 50px; width: 38px;" width="57" class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-white m-b-0">
+                        <i class="feather icon-clock text-white f-14 m-r-10"></i>update
+                        : 2:15 am
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-c-green update-card">
+                <div class="card-block">
+                    <div class="row align-items-end">
+                        <div class="col-8">
+                            <h4 class="text-white">290+</h4>
+                            <h6 class="text-white m-b-0">Page Views</h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                            <canvas id="update-chart-2" height="75" width="57" style="display: block; height: 50px; width: 38px;" class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-white m-b-0">
+                        <i class="feather icon-clock text-white f-14 m-r-10"></i>update
+                        : 2:15 am
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-c-pink update-card">
+                <div class="card-block">
+                    <div class="row align-items-end">
+                        <div class="col-8">
+                            <h4 class="text-white">145</h4>
+                            <h6 class="text-white m-b-0">Task Completed</h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                            <canvas id="update-chart-3" height="75" width="57" style="display: block; height: 50px; width: 38px;" class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-white m-b-0">
+                        <i class="feather icon-clock text-white f-14 m-r-10"></i>update
+                        : 2:15 am
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-c-lite-green update-card">
+                <div class="card-block">
+                    <div class="row align-items-end">
+                        <div class="col-8">
+                            <h4 class="text-white">500</h4>
+                            <h6 class="text-white m-b-0">Downloads</h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                            <canvas id="update-chart-4" height="75" width="57" style="display: block; height: 50px; width: 38px;" class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="text-white m-b-0">
+                        <i class="feather icon-clock text-white f-14 m-r-10"></i>update
+                        : 2:15 am
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- task, page, download counter  end -->
+        <!--  sale analytics start -->
+        <div class="col-xl-9 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Sales Analytics</h5>
+                    <span class="text-muted">
+                        For more details about usage, please
+                        refer <a href="https://www.amcharts.com/online-store/" target="_blank">amCharts</a> licences.
+                    </span>
+                    <div class="card-header-right">
+                        <ul class="list-unstyled card-option">
+                            <li><i class="feather icon-maximize full-card"></i></li>
+                            <li>
+                                <i class="feather icon-minus minimize-card"></i>
+                            </li>
+                            <li><i class="feather icon-trash-2 close-card"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <div id="sales-analytics" style="height: 265px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 662px; height: 265px; padding: 0px; cursor: default; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 662px; height: 265px; top: 0.458344px; left: -0.208313px;"><desc>JavaScript chart by amCharts 3.21.5</desc><g><path cs="100,100" d="M0.5,0.5 L661.5,0.5 L661.5,264.5 L0.5,264.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path><path cs="100,100" d="M0.5,0.5 L611.5,0.5 L611.5,179.5 L0.5,179.5 L0.5,0.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0" transform="translate(50,55)"></path></g><g><g transform="translate(50,0)" visibility="hidden"></g><g transform="translate(50,55)"><g><path cs="100,100" d="M0.5,0.5 L0.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#000000" transform="translate(0,179)"></path></g><g><path cs="100,100" d="M109.5,0.5 L109.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#000000" transform="translate(0,179)"></path></g><g><path cs="100,100" d="M218.5,0.5 L218.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#000000" transform="translate(0,179)"></path></g><g><path cs="100,100" d="M327.5,0.5 L327.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#000000" transform="translate(0,179)"></path></g><g><path cs="100,100" d="M436.5,0.5 L436.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#000000" transform="translate(0,179)"></path></g><g><path cs="100,100" d="M546.5,0.5 L546.5,5.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#000000" transform="translate(0,179)"></path></g></g><g transform="translate(50,55)" visibility="visible"></g></g><g transform="translate(50,55)" clip-path="url(#AmChartsEl-3)"><g visibility="hidden"><g transform="translate(28,0)" visibility="hidden"><rect x="0.5" y="0.5" width="11" height="179" rx="0" ry="0" stroke-width="0" fill="#000000" stroke="#000000" fill-opacity="0" stroke-opacity="0" transform="translate(-6,0)"></rect></g></g></g><g></g><g></g><g></g><g><g transform="translate(50,55)"><g clip-path="url(#AmChartsEl-157)"><path cs="100,100" d="M5,162 C8,161,11,140,16,137 C22,135,22,122,27,120 C33,119,33,111,38,112 C44,114,44,150,49,152 C55,155,55,157,60,158 C66,159,66,172,71,170 C77,168,77,124,82,121 C88,118,88,109,93,109 C99,109,99,120,104,121 C110,122,110,130,115,130 C120,129,120,113,125,112 C130,111,131,112,136,111 C142,111,142,105,147,107 C153,110,153,158,158,160 C164,162,164,148,169,146 C175,145,175,134,180,134 C186,133,186,134,191,134 C197,134,197,137,202,136 C208,135,208,110,213,109 C219,109,219,118,224,120 C230,121,230,142,235,141 C240,141,240,120,245,117 C250,115,251,92,256,94 C262,95,262,143,267,146 C273,148,273,137,278,138 C284,138,284,155,289,153 C295,151,295,106,300,104 C306,102,306,119,311,119 C317,118,317,100,322,98 C328,97,328,94,333,94 C339,93,339,85,344,86 C350,87,350,106,355,105 C361,105,361,75,366,76 C371,76,371,109,376,111 C381,113,382,114,387,114 C393,114,393,104,398,102 C404,100,404,77,409,75 C415,74,415,75,420,75 C426,76,426,89,431,89 C437,88,437,63,442,62 C448,61,448,68,453,70 C459,72,459,95,464,96 C470,97,470,89,475,88 C481,87,481,78,486,77 C491,75,491,59,496,59 C501,60,502,83,507,82 C513,81,513,48,518,44 C524,41,524,9,529,9 C535,10,535,52,540,54 C546,57,546,61,551,60 C557,59,557,36,562,34 C568,32,568,25,573,25 C579,24,579,23,584,23 C590,23,590,28,595,28 C601,28,603,23,606,23 M0,0 L0,0" fill="none" fill-opacity="0" stroke-width="2" stroke-opacity="0.9" stroke="#fe9365"></path></g><g clip-path="url(#AmChartsEl-156)"><path cs="100,100" d="M5,162 C8,161,11,140,16,137 C22,135,22,122,27,120 C33,119,33,111,38,112 C44,114,44,150,49,152 C55,155,55,157,60,158 C66,159,66,172,71,170 C77,168,77,124,82,121 C88,118,88,109,93,109 C99,109,99,120,104,121 C110,122,110,130,115,130 C120,129,120,113,125,112 C130,111,131,112,136,111 C142,111,142,105,147,107 C153,110,153,158,158,160 C164,162,164,148,169,146 C175,145,175,134,180,134 C186,133,186,134,191,134 C197,134,197,137,202,136 C208,135,208,110,213,109 C219,109,219,118,224,120 C230,121,230,142,235,141 C240,141,240,120,245,117 C250,115,251,92,256,94 C262,95,262,143,267,146 C273,148,273,137,278,138 C284,138,284,155,289,153 C295,151,295,106,300,104 C306,102,306,119,311,119 C317,118,317,100,322,98 C328,97,328,94,333,94 C339,93,339,85,344,86 C350,87,350,106,355,105 C361,105,361,75,366,76 C371,76,371,109,376,111 C381,113,382,114,387,114 C393,114,393,104,398,102 C404,100,404,77,409,75 C415,74,415,75,420,75 C426,76,426,89,431,89 C437,88,437,63,442,62 C448,61,448,68,453,70 C459,72,459,95,464,96 C470,97,470,89,475,88 C481,87,481,78,486,77 C491,75,491,59,496,59 C501,60,502,83,507,82 C513,81,513,48,518,44 C524,41,524,9,529,9 C535,10,535,52,540,54 C546,57,546,61,551,60 C557,59,557,36,562,34 C568,32,568,25,573,25 C579,24,579,23,584,23 C590,23,590,28,595,28 C601,28,603,23,606,23 M0,0 L0,0" fill="none" fill-opacity="0" stroke-width="2" stroke-opacity="0.9" stroke="#fe5d70"></path></g><clipPath id="AmChartsEl-156"><rect x="0" y="0" width="611" height="107" rx="0" ry="0" stroke-width="0"></rect></clipPath><clipPath id="AmChartsEl-157"><rect x="0" y="107" width="611" height="72" rx="0" ry="0" stroke-width="0"></rect></clipPath><g></g></g></g><g></g><g><path cs="100,100" d="M0.5,107.5 L611.5,107.5 L611.5,107.5" fill="none" stroke-width="1" stroke-opacity="0" stroke="#000000" transform="translate(50,55)"></path><path cs="100,100" d="M0.5,37.5 L612.5,37.5 L612.5,37.5" fill="none" stroke-width="1" stroke-opacity="0" stroke="#000000" transform="translate(50,0)"></path><g><path cs="100,100" d="M0.5,0.5 L611.5,0.5" fill="none" stroke-width="1" stroke-opacity="0" stroke="#000000" transform="translate(0,55)"></path></g><g><path cs="100,100" d="M0.5,0.5 L0.5,55.5" fill="none" stroke-width="1" stroke-opacity="0" stroke="#000000" transform="translate(50,0)" visibility="hidden"></path></g><g><path cs="100,100" d="M0.5,0.5 L611.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.3" stroke="#000000" transform="translate(50,234)"></path></g><g><path cs="100,100" d="M0.5,0.5 L0.5,179.5" fill="none" stroke-width="1" stroke-opacity="0" stroke="#000000" transform="translate(50,55)" visibility="visible"></path></g></g><g><g transform="translate(50,55)" clip-path="url(#AmChartsEl-4)" style="pointer-events: none;"><path cs="100,100" d="M0.5,0.5 L611.5,0.5 L611.5,0.5" fill="none" stroke-width="1" stroke-opacity="0.5" stroke="#000000" visibility="hidden" transform="translate(0,6)"></path></g><clipPath id="AmChartsEl-4"><rect x="0" y="0" width="611" height="179" rx="0" ry="0" stroke-width="0"></rect></clipPath></g><g><g visibility="visible" transform="translate(50,0)" style="touch-action: none;"><rect x="0.5" y="0.5" width="612" height="55" rx="0" ry="0" stroke-width="1" fill="#000000" stroke="#000000" fill-opacity="0" stroke-opacity="0"></rect><rect x="0.5" y="0.5" width="611.000244140625" height="56" rx="0" ry="0" stroke-width="0" fill="#888888" stroke="#888888" fill-opacity="0.1" stroke-opacity="0.1" transform="translate(0,0)"></rect><g transform="translate(0,0)"><g></g><g><path cs="100,100" d="M5,48 C8,48,11,43,16,43 C22,42,22,40,27,39 C33,39,33,37,38,38 C44,38,44,45,49,46 C55,46,55,47,60,47 C66,47,66,50,71,49 C77,49,77,40,82,39 C88,39,88,37,93,37 C99,37,99,39,104,39 C110,40,110,41,115,41 C120,41,120,38,125,38 C130,37,131,38,136,37 C142,37,142,36,147,37 C153,37,153,47,158,48 C164,48,164,45,169,45 C175,44,175,42,180,42 C186,42,186,42,191,42 C197,42,197,43,202,43 C208,42,208,37,213,37 C219,37,219,39,224,39 C230,39,230,44,235,44 C240,44,240,39,245,39 C250,38,251,34,256,34 C262,34,262,44,267,44 C273,45,273,43,278,43 C284,43,284,46,289,46 C295,46,295,36,300,36 C306,36,306,39,311,39 C317,39,317,35,322,35 C328,35,328,34,333,34 C339,34,339,32,344,32 C350,32,350,36,355,36 C361,36,361,30,366,30 C371,30,371,37,376,37 C381,38,382,38,387,38 C393,38,393,36,398,36 C404,35,404,30,409,30 C415,30,415,30,420,30 C426,30,426,33,431,33 C437,33,437,28,442,27 C448,27,448,29,453,29 C459,29,459,34,464,34 C470,34,470,33,475,33 C481,32,481,31,486,30 C491,30,491,27,496,27 C501,27,502,32,507,31 C513,31,513,24,518,24 C524,23,524,16,529,17 C535,17,535,25,540,26 C546,26,546,27,551,27 C557,27,557,22,562,22 C568,21,568,20,573,20 C579,20,579,19,584,19 C590,19,590,20,595,20 C601,20,603,19,606,19 M0,0 L0,0" fill="none" fill-opacity="0" stroke-width="1" stroke-opacity="0.2" stroke="#c2c2c2"></path></g><g></g></g><g transform="translate(0,0)" clip-path="url(#AmChartsEl-155)"><g></g><g><path cs="100,100" d="M5,48 C8,48,11,43,16,43 C22,42,22,40,27,39 C33,39,33,37,38,38 C44,38,44,45,49,46 C55,46,55,47,60,47 C66,47,66,50,71,49 C77,49,77,40,82,39 C88,39,88,37,93,37 C99,37,99,39,104,39 C110,40,110,41,115,41 C120,41,120,38,125,38 C130,37,131,38,136,37 C142,37,142,36,147,37 C153,37,153,47,158,48 C164,48,164,45,169,45 C175,44,175,42,180,42 C186,42,186,42,191,42 C197,42,197,43,202,43 C208,42,208,37,213,37 C219,37,219,39,224,39 C230,39,230,44,235,44 C240,44,240,39,245,39 C250,38,251,34,256,34 C262,34,262,44,267,44 C273,45,273,43,278,43 C284,43,284,46,289,46 C295,46,295,36,300,36 C306,36,306,39,311,39 C317,39,317,35,322,35 C328,35,328,34,333,34 C339,34,339,32,344,32 C350,32,350,36,355,36 C361,36,361,30,366,30 C371,30,371,37,376,37 C381,38,382,38,387,38 C393,38,393,36,398,36 C404,35,404,30,409,30 C415,30,415,30,420,30 C426,30,426,33,431,33 C437,33,437,28,442,27 C448,27,448,29,453,29 C459,29,459,34,464,34 C470,34,470,33,475,33 C481,32,481,31,486,30 C491,30,491,27,496,27 C501,27,502,32,507,31 C513,31,513,24,518,24 C524,23,524,16,529,17 C535,17,535,25,540,26 C546,26,546,27,551,27 C557,27,557,22,562,22 C568,21,568,20,573,20 C579,20,579,19,584,19 C590,19,590,20,595,20 C601,20,603,19,606,19 M0,0 L0,0" fill="none" fill-opacity="0" stroke-width="1" stroke-opacity="1" stroke="#888888"></path></g><g></g></g><g transform="translate(0,0)"></g><g transform="translate(0,0)" visibility="visible"><text y="6" fill="#888888" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(3,43.5)"><tspan y="6" x="0">1950</tspan></text><text y="6" fill="#888888" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(112,43.5)"><tspan y="6" x="0">1960</tspan></text><text y="6" fill="#888888" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(221,43.5)"><tspan y="6" x="0">1970</tspan></text><text y="6" fill="#888888" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(330,43.5)"><tspan y="6" x="0">1980</tspan></text><text y="6" fill="#888888" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(439,43.5)"><tspan y="6" x="0">1990</tspan></text><text y="6" fill="#888888" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(549,43.5)"><tspan y="6" x="0">2000</tspan></text></g><rect x="0.5" y="0.5" width="612" height="55" rx="0" ry="0" stroke-width="0" fill="#000" stroke="#000" fill-opacity="0.005" stroke-opacity="0.005"></rect><rect x="0" y="0.5" width="611.000244140625" height="55" rx="0" ry="0" stroke-width="0" fill="#000" stroke="#000" fill-opacity="0.005" stroke-opacity="0.005" aria-label="Zoom chart using cursor arrows" role="menuitem" style="cursor: -webkit-grab;"></rect><g aria-label="Zoom chart using cursor arrows" role="menuitem" transform="translate(-17,10)" visibility="visible"><image x="0" y="0" width="35" height="35" xlink:href="file:///C:/Users/99470/AppData/Local/Temp/Rar$EXa2464.27239/riode-adminty/adminty-html/files/assets/pages/widget/amchart/images/dragIconRoundBig.svg"></image><rect x="0.5" y="0.5" width="25" height="55" rx="0" ry="0" stroke-width="0" fill="#000" stroke="#000" fill-opacity="0.005" stroke-opacity="0.005" transform="translate(5,-10)"></rect></g><g aria-label="Zoom chart using cursor arrows" role="menuitem" transform="translate(594,10)" visibility="visible"><image x="0" y="0" width="35" height="35" xlink:href="file:///C:/Users/99470/AppData/Local/Temp/Rar$EXa2464.27239/riode-adminty/adminty-html/files/assets/pages/widget/amchart/images/dragIconRoundBig.svg"></image><rect x="0.5" y="0.5" width="25" height="55" rx="0" ry="0" stroke-width="0" fill="#000" stroke="#000" fill-opacity="0.005" stroke-opacity="0.005" transform="translate(5,-10)"></rect></g><clipPath id="AmChartsEl-155"><rect x="0" y="0" width="611.000244140625" height="56" rx="0" ry="0" stroke-width="0"></rect></clipPath></g></g><g><g transform="translate(0,0)"></g><g transform="translate(0,0)"></g><g transform="translate(50,55)"><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(5,162) scale(1)" aria-label=" 1950 -0.307"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(16,137) scale(1)" aria-label=" 1951 -0.168"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(27,120) scale(1)" aria-label=" 1952 -0.073"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(38,112) scale(1)" aria-label=" 1953 -0.027"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(49,152) scale(1)" aria-label=" 1954 -0.251"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(60,158) scale(1)" aria-label=" 1955 -0.281"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(71,170) scale(1)" aria-label=" 1956 -0.348"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(82,121) scale(1)" aria-label=" 1957 -0.074"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(93,109)" aria-label=" 1958 -0.011"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(104,121) scale(1)" aria-label=" 1959 -0.074"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(115,130) scale(1)" aria-label=" 1960 -0.124"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(125,112) scale(1)" aria-label=" 1961 -0.024"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(136,111) scale(1)" aria-label=" 1962 -0.022"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(147,107) scale(1)" aria-label=" 1963 0"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(158,160) scale(1)" aria-label=" 1964 -0.296"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(169,146) scale(1)" aria-label=" 1965 -0.217"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(180,134) scale(1)" aria-label=" 1966 -0.147"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(191,134) scale(1)" aria-label=" 1967 -0.15"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(202,136) scale(1)" aria-label=" 1968 -0.16"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(213,109) scale(1)" aria-label=" 1969 -0.011"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(224,120) scale(1)" aria-label=" 1970 -0.068"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(235,141) scale(1)" aria-label=" 1971 -0.19"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(245,117) scale(1)" aria-label=" 1972 -0.056"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(256,94) scale(1)" aria-label=" 1973 0.077"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(267,146) scale(1)" aria-label=" 1974 -0.213"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(278,138) scale(1)" aria-label=" 1975 -0.17"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(289,153) scale(1)" aria-label=" 1976 -0.254"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(300,104) scale(1)" aria-label=" 1977 0.019"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(311,119) scale(1)" aria-label=" 1978 -0.063"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(322,98) scale(1)" aria-label=" 1979 0.05"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(333,94) scale(1)" aria-label=" 1980 0.077"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(344,86) scale(1)" aria-label=" 1981 0.12"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(355,105) scale(1)" aria-label=" 1982 0.011"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(366,76) scale(1)" aria-label=" 1983 0.177"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(376,111) scale(1)" aria-label=" 1984 -0.021"></circle><circle r="4" cx="0" cy="0" fill="#fe9365" stroke="#fe9365" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(387,114) scale(1)" aria-label=" 1985 -0.037"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(398,102) scale(1)" aria-label=" 1986 0.03"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(409,75) scale(1)" aria-label=" 1987 0.179"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(420,75) scale(1)" aria-label=" 1988 0.18"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(431,89) scale(1)" aria-label=" 1989 0.104"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(442,62) scale(1)" aria-label=" 1990 0.255"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(453,70) scale(1)" aria-label=" 1991 0.21"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(464,96) scale(1)" aria-label=" 1992 0.065"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(475,88) scale(1)" aria-label=" 1993 0.11"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(486,77) scale(1)" aria-label=" 1994 0.172"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(496,59) scale(1)" aria-label=" 1995 0.269"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(507,82) scale(1)" aria-label=" 1996 0.141"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(518,44) scale(1)" aria-label=" 1997 0.353"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(529,9) scale(1)" aria-label=" 1998 0.548"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(540,54) scale(1)" aria-label=" 1999 0.298"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(551,60) scale(1)" aria-label=" 2000 0.267"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(562,34) scale(1)" aria-label=" 2001 0.411"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(573,25) scale(1)" aria-label=" 2002 0.462"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(584,23) scale(1)" aria-label=" 2003 0.47"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(595,28) scale(1)" aria-label=" 2004 0.445"></circle><circle r="4" cx="0" cy="0" fill="#fe5d70" stroke="#fe5d70" fill-opacity="1" stroke-width="2" stroke-opacity="0" transform="translate(606,23) scale(1)" aria-label=" 2005 0.47"></circle></g></g><g><g></g></g><g><g transform="translate(50,0)" visibility="hidden"></g><g transform="translate(50,55)" visibility="visible"><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(3,191.5)"><tspan y="6" x="0">1950</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(112,191.5)"><tspan y="6" x="0">1960</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(221,191.5)"><tspan y="6" x="0">1970</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(330,191.5)"><tspan y="6" x="0">1980</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(439,191.5)"><tspan y="6" x="0">1990</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(549,191.5)"><tspan y="6" x="0">2000</tspan></text></g><g transform="translate(50,55)" visibility="visible"><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,177.828125)"><tspan y="6" x="0">-0.4</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,141.828125)"><tspan y="6" x="0">-0.2</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,105.828125)"><tspan y="6" x="0">0.0</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,70.828125)"><tspan y="6" x="0">0.2</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,34.828125)"><tspan y="6" x="0">0.4</tspan></text><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="end" transform="translate(-12,-1.171875)"><tspan y="6" x="0">0.6</tspan></text></g></g><g></g><g transform="translate(50,55)"></g><g><g transform="translate(578,63)" visibility="hidden"><rect x="0.5" y="0.5" width="92" height="33" rx="0" ry="0" stroke-width="1" fill="#000000" stroke="#000000" fill-opacity="1" stroke-opacity="1" opacity="0" transform="translate(-8,-8)"></rect><image x="0" y="0" width="19" height="19" xlink:href="file:///C:/Users/99470/AppData/Local/Temp/Rar$EXa2464.27239/riode-adminty/adminty-html/files/assets/pages/widget/amchart/images/lens.svg"></image><text y="6" fill="#000000" font-family="Verdana" font-size="11px" opacity="1" text-anchor="start" transform="translate(24,7)"><tspan y="6" x="0">Show all</tspan></text></g></g><g></g><clipPath id="AmChartsEl-3"><rect x="-1" y="-1" width="613" height="181" rx="0" ry="0" stroke-width="0"></rect></clipPath></svg><a href="http://www.amcharts.com/javascript-charts/" title="JavaScript charts" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 55px; top: 60px;">JS chart by amCharts</a></div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-12">
+            <div class="card user-card2">
+                <div class="card-block text-center">
+                    <h6 class="m-b-15">Project Risk</h6>
+                    <div class="risk-rate">
+                        <span><b>5</b></span>
+                    </div>
+                    <h6 class="m-b-10 m-t-10">Balanced</h6>
+                    <a href="#!" class="text-c-yellow b-b-warning">
+                        Change Your
+                        Risk
+                    </a>
+                    <div class="row justify-content-center m-t-10 b-t-default m-l-0 m-r-0">
+                        <div class="col m-t-15 b-r-default">
+                            <h6 class="text-muted">Nr</h6>
+                            <h6>AWS 2455</h6>
+                        </div>
+                        <div class="col m-t-15">
+                            <h6 class="text-muted">Created</h6>
+                            <h6>30th Sep</h6>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning btn-block p-t-15 p-b-15">
+                    Download
+                    Overall Report
+                </button>
+            </div>
+        </div>
+        <!--  sale analytics end -->
+
+        <div class="col-xl-8 col-md-12">
+            <div class="card table-card">
+                <div class="card-header">
+                    <h5>Application Sales</h5>
+                    <div class="card-header-right">
+                        <ul class="list-unstyled card-option">
+                            <li><i class="feather icon-maximize full-card"></i></li>
+                            <li>
+                                <i class="feather icon-minus minimize-card"></i>
+                            </li>
+                            <li><i class="feather icon-trash-2 close-card"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <div class="table-responsive">
+                        <table class="table table-hover  table-borderless">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="chk-option">
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label class="check-task">
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon feather icon-check txt-default"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        Application
+                                    </th>
+                                    <th>Sales</th>
+                                    <th>Change</th>
+                                    <th>Avg Price</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chk-option">
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label class="check-task">
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon feather icon-check txt-default"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-inline-block align-middle">
+                                            <h6>Able Pro</h6>
+                                            <p class="text-muted m-b-0">
+                                                Powerful
+                                                Admin Theme
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>16,300</td>
+                                    <td><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div><canvas id="app-sale1" height="82" width="166" style="display: block; height: 55px; width: 111px;" class="chartjs-render-monitor"></canvas></td>
+                                    <td>$53</td>
+                                    <td class="text-c-blue">$15,652</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk-option">
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label class="check-task">
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon feather icon-check txt-default"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-inline-block align-middle">
+                                            <h6>Photoshop</h6>
+                                            <p class="text-muted m-b-0">
+                                                Design
+                                                Software
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>26,421</td>
+                                    <td><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div><canvas id="app-sale2" height="82" width="166" style="display: block; height: 55px; width: 111px;" class="chartjs-render-monitor"></canvas></td>
+                                    <td>$35</td>
+                                    <td class="text-c-blue">$18,785</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk-option">
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label class="check-task">
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon feather icon-check txt-default"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-inline-block align-middle">
+                                            <h6>Guruable</h6>
+                                            <p class="text-muted m-b-0">
+                                                Best Admin
+                                                Template
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>8,265</td>
+                                    <td><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div><canvas id="app-sale3" height="82" width="166" style="display: block; height: 55px; width: 111px;" class="chartjs-render-monitor"></canvas></td>
+                                    <td>$98</td>
+                                    <td class="text-c-blue">$9,652</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk-option">
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label class="check-task">
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon feather icon-check txt-default"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-inline-block align-middle">
+                                            <h6>Flatable</h6>
+                                            <p class="text-muted m-b-0">
+                                                Admin App
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>10,652</td>
+                                    <td><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div><canvas id="app-sale4" height="82" width="166" style="display: block; height: 55px; width: 111px;" class="chartjs-render-monitor"></canvas></td>
+                                    <td>$20</td>
+                                    <td class="text-c-blue">$7,856</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-center">
+                            <a href="#!" class=" b-b-primary text-primary">
+                                View all
+                                Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-12">
+            <div class="card user-activity-card">
+                <div class="card-header">
+                    <h5>User Activity</h5>
+                </div>
+                <div class="card-block">
+                    <div class="row m-b-25">
+                        <div class="col-auto p-r-0">
+                            <div class="u-img">
+                                <img src="~/admin/assets/images/breadcrumb-bg.jpg" alt="user image" class="img-radius cover-img">
+                                <img src="~/admin/assets/images/avatar-2.jpg" alt="user image" class="img-radius profile-img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-b-5">John Deo</h6>
+                            <p class="text-muted m-b-0">
+                                Lorem Ipsum is simply dummy
+                                text.
+                            </p>
+                            <p class="text-muted m-b-0">
+                                <i class="feather icon-clock m-r-10"></i>2 min ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row m-b-25">
+                        <div class="col-auto p-r-0">
+                            <div class="u-img">
+                                <img src="~/admin/assets/images/breadcrumb-bg.jpg" alt="user image" class="img-radius cover-img">
+                                <img src="~/admin/assets/images/avatar-2.jpg" alt="user image" class="img-radius profile-img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-b-5">John Deo</h6>
+                            <p class="text-muted m-b-0">
+                                Lorem Ipsum is simply dummy
+                                text.
+                            </p>
+                            <p class="text-muted m-b-0">
+                                <i class="feather icon-clock m-r-10"></i>2 min ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row m-b-25">
+                        <div class="col-auto p-r-0">
+                            <div class="u-img">
+                                <img src="~/admin/assets/images/breadcrumb-bg.jpg" alt="user image" class="img-radius cover-img">
+                                <img src="~/admin/assets/images/avatar-2.jpg" alt="user image" class="img-radius profile-img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-b-5">John Deo</h6>
+                            <p class="text-muted m-b-0">
+                                Lorem Ipsum is simply dummy
+                                text.
+                            </p>
+                            <p class="text-muted m-b-0">
+                                <i class="feather icon-clock m-r-10"></i>2 min ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row m-b-5">
+                        <div class="col-auto p-r-0">
+                            <div class="u-img">
+                                <img src="~/admin/assets/images/breadcrumb-bg.jpg" alt="user image" class="img-radius cover-img">
+                                <img src="~/admin/assets/images/avatar-2.jpg" alt="user image" class="img-radius profile-img">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-b-5">John Deo</h6>
+                            <p class="text-muted m-b-0">
+                                Lorem Ipsum is simply dummy
+                                text.
+                            </p>
+                            <p class="text-muted m-b-0">
+                                <i class="feather icon-clock m-r-10"></i>2 min ago
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#!" class="b-b-primary text-primary">
+                            View all
+                            Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- wather user -->
+        <div class="col-xl-6 col-md-12">
+            <div class="card latest-update-card">
+                <div class="card-header">
+                    <h5>Latest Updates</h5>
+                    <div class="card-header-right">
+                        <ul class="list-unstyled card-option">
+                            <li>
+                                <i class="fa fa fa-wrench open-card-option"></i>
+                            </li>
+                            <li><i class="fa fa-window-maximize full-card"></i></li>
+                            <li><i class="fa fa-minus minimize-card"></i></li>
+                            <li><i class="fa fa-refresh reload-card"></i></li>
+                            <li><i class="fa fa-trash close-card"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <div class="latest-update-box">
+                        <div class="row p-b-15">
+                            <div class="col-auto text-right update-meta">
+                                <p class="text-muted m-b-0 d-inline">4 hrs ago</p>
+                                <i class="feather icon-briefcase bg-simple-c-pink update-icon"></i>
+                            </div>
+                            <div class="col">
+                                <h6>+ 5 New Products were added!</h6>
+                                <p class="text-muted m-b-0">Congratulations!</p>
+                            </div>
+                        </div>
+                        <div class="row p-b-15">
+                            <div class="col-auto text-right update-meta">
+                                <p class="text-muted m-b-0 d-inline">1 day ago</p>
+                                <i class="feather icon-check bg-simple-c-yellow  update-icon"></i>
+                            </div>
+                            <div class="col">
+                                <h6>Database backup completed!</h6>
+                                <p class="text-muted m-b-0">
+                                    Download the <span class="text-c-blue">latest backup</span>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row p-b-0">
+                            <div class="col-auto text-right update-meta">
+                                <p class="text-muted m-b-0 d-inline">2 day ago</p>
+                                <i class="feather icon-facebook bg-simple-c-green update-icon"></i>
+                            </div>
+                            <div class="col">
+                                <h6>+1 Friend Requests</h6>
+                                <p class="text-muted m-b-10">
+                                    This is great, keep it
+                                    up!
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-hover m-b-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="b-none">
+                                                    <a href="#!" class="align-middle">
+                                                        <img src="~/admin/assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                        <div class="d-inline-block">
+                                                            <h6>Jeny William</h6>
+                                                            <p class="text-muted m-b-0">
+                                                                Graphic Designer
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="#!" class="b-b-primary text-primary">
+                            View all
+                            Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-md-12">
+            <div class="card user-card-full">
+                <div class="row m-l-0 m-r-0">
+                    <div class="col-sm-4 bg-c-lite-green user-profile">
+                        <div class="card-block text-center text-white">
+                            <div class="m-b-25">
+                                <img src="~/admin/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                            </div>
+                            <h6 class="f-w-600">Jeny William</h6>
+                            <p>Web Designer</p>
+                            <i class="feather icon-edit m-t-10 f-16"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card-block">
+                            <h6 class="m-b-20 p-b-5 b-b-default f-w-600">
+                                Information
+                            </h6>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="m-b-10 f-w-600">Email</p>
+                                    <h6 class="text-muted f-w-400">
+                                        jeny@gmail.com
+                                    </h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="m-b-10 f-w-600">Phone</p>
+                                    <h6 class="text-muted f-w-400">
+                                        0023-333-526136
+                                    </h6>
+                                </div>
+                            </div>
+                            <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">
+                                Projects
+                            </h6>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="m-b-10 f-w-600">Recent</p>
+                                    <h6 class="text-muted f-w-400">
+                                        Guruable Admin
+                                    </h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="m-b-10 f-w-600">Most Viewed</p>
+                                    <h6 class="text-muted f-w-400">
+                                        Able Pro Admin
+                                    </h6>
+                                </div>
+                            </div>
+                            <ul class="social-link list-unstyled m-t-40 m-b-10">
+                                <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook"><i class="feather icon-facebook facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="twitter"><i class="feather icon-twitter twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="instagram"><i class="feather icon-instagram instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- wather user -->
+        <!-- social download  start -->
+        <div class="col-xl-4 col-md-6">
+            <div class="card social-card bg-simple-c-blue">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="feather icon-mail f-34 text-c-blue social-icon"></i>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-b-0">Mail</h6>
+                            <p>231.2w downloads</p>
+                            <p class="m-b-0">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="download-icon"><i class="feather icon-arrow-down"></i></a>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="card social-card bg-simple-c-pink">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="feather icon-twitter f-34 text-c-pink social-icon"></i>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-b-0">twitter</h6>
+                            <p>231.2w downloads</p>
+                            <p class="m-b-0">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="download-icon"><i class="feather icon-arrow-down"></i></a>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-12">
+            <div class="card social-card bg-simple-c-green">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <i class="feather icon-instagram f-34 text-c-green social-icon"></i>
+                        </div>
+                        <div class="col">
+                            <h6 class="m-b-0">Instagram</h6>
+                            <p>231.2w downloads</p>
+                            <p class="m-b-0">
+                                Lorem Ipsum is simply dummy text of the
+                                printing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="download-icon"><i class="feather icon-arrow-down"></i></a>
+            </div>
+        </div>
+        <!-- social download  end -->
+
+    </div>
+</div>

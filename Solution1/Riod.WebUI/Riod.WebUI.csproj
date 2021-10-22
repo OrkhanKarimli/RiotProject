@@ -5,6 +5,92 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\admin\bower_components\animate.css\animate.css" />
+    <Content Include="wwwroot\admin\bower_components\bootstrap-daterangepicker\daterangepicker.css" />
+    <Content Include="wwwroot\admin\bower_components\bootstrap-multiselect\dist\css\bootstrap-multiselect.css" />
+    <Content Include="wwwroot\admin\bower_components\bootstrap-tagsinput\dist\bootstrap-tagsinput.css" />
+    <Content Include="wwwroot\admin\bower_components\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="wwwroot\admin\bower_components\c3\css\c3.html" />
+    <Content Include="wwwroot\admin\bower_components\chartist\dist\chartist.css" />
+    <Content Include="wwwroot\admin\bower_components\cropper\dist\cropper.css" />
+    <Content Include="wwwroot\admin\bower_components\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="wwwroot\admin\bower_components\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css" />
+    <Content Include="wwwroot\admin\bower_components\datedropper\datedropper.min.css" />
+    <Content Include="wwwroot\admin\bower_components\datedropper\dd-icon\dd-icon.eot" />
+    <Content Include="wwwroot\admin\bower_components\datedropper\dd-icon\dd-icon.ttf" />
+    <Content Include="wwwroot\admin\bower_components\datedropper\dd-icon\dd-icon.woff" />
+    <Content Include="wwwroot\admin\bower_components\datedropper\dd-icon\dd-icond41d.eot" />
+    <Content Include="wwwroot\admin\bower_components\datedropper\js\datedropper.min.html" />
+    <Content Include="wwwroot\admin\bower_components\ekko-lightbox\dist\ekko-lightbox.css" />
+    <Content Include="wwwroot\admin\bower_components\font-awesome\css\font-awesome.min.css" />
+    <Content Include="wwwroot\admin\bower_components\fullcalendar\dist\fullcalendar.css" />
+    <Content Include="wwwroot\admin\bower_components\fullcalendar\dist\fullcalendar.print.css" />
+    <Content Include="wwwroot\admin\bower_components\handsontable\dist\handsontable.full.min.css" />
+    <Content Include="wwwroot\admin\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.html" />
+    <Content Include="wwwroot\admin\bower_components\intro.js\introjs.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\css\css-stars.html" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\css\fontawesome-stars-o.html" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\bars-1to10.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\bars-horizontal.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\bars-movie.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\bars-pill.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\bars-reversed.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\bars-square.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\css-stars.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\themes\fontawesome-stars.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-minicolors\jquery.minicolors.css" />
+    <Content Include="wwwroot\admin\bower_components\jquery-minicolors\jquery.minicolors.png" />
+    <Content Include="wwwroot\admin\bower_components\jquery.steps\demo\css\jquery.steps.css" />
+    <Content Include="wwwroot\admin\bower_components\jstree\dist\themes\default\32px.png" />
+    <Content Include="wwwroot\admin\bower_components\jstree\dist\themes\default\40px.png" />
+    <Content Include="wwwroot\admin\bower_components\jstree\dist\themes\default\style.min.css" />
+    <Content Include="wwwroot\admin\bower_components\jstree\dist\themes\default\throbber.gif" />
+    <Content Include="wwwroot\admin\bower_components\lightbox2\dist\css\lightbox.css" />
+    <Content Include="wwwroot\admin\bower_components\lightbox2\dist\css\lightbox.min.css" />
+    <Content Include="wwwroot\admin\bower_components\lightbox2\dist\images\close.png" />
+    <Content Include="wwwroot\admin\bower_components\lightbox2\dist\images\loading.gif" />
+    <Content Include="wwwroot\admin\bower_components\lightbox2\dist\images\next.png" />
+    <Content Include="wwwroot\admin\bower_components\lightbox2\dist\images\prev.png" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\css\lightgallery.min.css" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\fonts\lgd41d.eot" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\fonts\lgd641.eot" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\fonts\lgd641.ttf" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\fonts\lgd641.woff" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\img\loading.gif" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\img\video-play.png" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\img\vimeo-play.png" />
+    <Content Include="wwwroot\admin\bower_components\lightgallery\dist\img\youtube-play.png" />
+    <Content Include="wwwroot\admin\bower_components\long-press\css\app.css" />
+    <Content Include="wwwroot\admin\bower_components\long-press\css\main.css" />
+    <Content Include="wwwroot\admin\bower_components\multiselect\css\multi-select.css" />
+    <Content Include="wwwroot\admin\bower_components\multiselect\img\switch.png" />
+    <Content Include="wwwroot\admin\bower_components\nvd3\build\nv.d3.css" />
+    <Content Include="wwwroot\admin\bower_components\offline\themes\offline-language-english.css" />
+    <Content Include="wwwroot\admin\bower_components\offline\themes\offline-theme-slide.css" />
+    <Content Include="wwwroot\admin\bower_components\owl.carousel\dist\assets\owl.carousel.css" />
+    <Content Include="wwwroot\admin\bower_components\owl.carousel\dist\assets\owl.theme.default.css" />
+    <Content Include="wwwroot\admin\bower_components\owl.carousel\dist\assets\owl.video.play.png" />
+    <Content Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.brighttheme.css" />
+    <Content Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.buttons.css" />
+    <Content Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.css" />
+    <Content Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.history.css" />
+    <Content Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.mobile.css" />
+    <Content Include="wwwroot\admin\bower_components\seiyria-bootstrap-slider\dist\css\bootstrap-slider.css" />
+    <Content Include="wwwroot\admin\bower_components\select2\dist\css\select2.min.css" />
+    <Content Include="wwwroot\admin\bower_components\slick-carousel\slick\ajax-loader.gif" />
+    <Content Include="wwwroot\admin\bower_components\slick-carousel\slick\fonts\slick.eot" />
+    <Content Include="wwwroot\admin\bower_components\slick-carousel\slick\fonts\slick.ttf" />
+    <Content Include="wwwroot\admin\bower_components\slick-carousel\slick\fonts\slick.woff" />
+    <Content Include="wwwroot\admin\bower_components\slick-carousel\slick\fonts\slickd41d.eot" />
+    <Content Include="wwwroot\admin\bower_components\slick-carousel\slick\slick-theme.css" />
+    <Content Include="wwwroot\admin\bower_components\slick-carousel\slick\slick.css" />
+    <Content Include="wwwroot\admin\bower_components\spectrum\spectrum.css" />
+    <Content Include="wwwroot\admin\bower_components\stroll\css\stroll.css" />
+    <Content Include="wwwroot\admin\bower_components\swiper\package\css\swiper.min.css" />
+    <Content Include="wwwroot\admin\bower_components\switchery\dist\switchery.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
       <PrivateAssets>all</PrivateAssets>
@@ -22,6 +108,109 @@
     <None Update="Views\static\coming-soon.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\bower_components\autosize\dist\autosize.min.js" />
+    <None Include="wwwroot\admin\bower_components\bootstrap-datepicker\dist\js\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\admin\bower_components\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <None Include="wwwroot\admin\bower_components\bootstrap-daterangepicker\daterangepicker.js" />
+    <None Include="wwwroot\admin\bower_components\bootstrap-maxlength\src\bootstrap-maxlength.js" />
+    <None Include="wwwroot\admin\bower_components\bootstrap-multiselect\dist\js\bootstrap-multiselect.js" />
+    <None Include="wwwroot\admin\bower_components\bootstrap-tagsinput\dist\bootstrap-tagsinput.js" />
+    <None Include="wwwroot\admin\bower_components\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\admin\bower_components\c3\c3.js" />
+    <None Include="wwwroot\admin\bower_components\chart.js\dist\Chart.js" />
+    <None Include="wwwroot\admin\bower_components\chartist\dist\chartist.js" />
+    <None Include="wwwroot\admin\bower_components\classie\classie.js" />
+    <None Include="wwwroot\admin\bower_components\clndr\src\clndr.js" />
+    <None Include="wwwroot\admin\bower_components\countdown\dest\jquery.countdown.js" />
+    <None Include="wwwroot\admin\bower_components\cropper\dist\cropper.min.js" />
+    <None Include="wwwroot\admin\bower_components\d3\d3.js" />
+    <None Include="wwwroot\admin\bower_components\d3\d3.min.js" />
+    <None Include="wwwroot\admin\bower_components\datatables.net-buttons\js\buttons.html5.min.js" />
+    <None Include="wwwroot\admin\bower_components\datatables.net-buttons\js\buttons.print.min.js" />
+    <None Include="wwwroot\admin\bower_components\datatables.net-buttons\js\dataTables.buttons.min.js" />
+    <None Include="wwwroot\admin\bower_components\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js" />
+    <None Include="wwwroot\admin\bower_components\datatables.net-responsive\js\dataTables.responsive.min.js" />
+    <None Include="wwwroot\admin\bower_components\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\admin\bower_components\datedropper\datedropper.min.js" />
+    <None Include="wwwroot\admin\bower_components\datedropper\dd-icon\dd-icon.svg" />
+    <None Include="wwwroot\admin\bower_components\ekko-lightbox\dist\ekko-lightbox.js" />
+    <None Include="wwwroot\admin\bower_components\ekko-lightbox\ekko-lightbox.js" />
+    <None Include="wwwroot\admin\bower_components\font-awesome\fonts\fontawesome-webfont3e6e.svg" />
+    <None Include="wwwroot\admin\bower_components\fullcalendar\dist\fullcalendar.min.js" />
+    <None Include="wwwroot\admin\bower_components\handsontable\dist\handsontable.full.js" />
+    <None Include="wwwroot\admin\bower_components\handsontable\dist\languages\all.js" />
+    <None Include="wwwroot\admin\bower_components\i18next-browser-languagedetector\i18nextBrowserLanguageDetector.min.js" />
+    <None Include="wwwroot\admin\bower_components\i18next-xhr-backend\i18nextXHRBackend.min.js" />
+    <None Include="wwwroot\admin\bower_components\i18next\i18next.min.js" />
+    <None Include="wwwroot\admin\bower_components\intro.js\intro.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-bar-rating\dist\jquery.barrating.min.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-bar-rating\jquery.barrating.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-i18next\jquery-i18next.min.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-minicolors\jquery.minicolors.min.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-slimscroll\jquery.slimscroll.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-sparkline\dist\jquery.sparkline.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-ui\jquery-ui.min.js" />
+    <None Include="wwwroot\admin\bower_components\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\admin\bower_components\jquery.cookie\jquery.cookie.js" />
+    <None Include="wwwroot\admin\bower_components\jquery.steps\build\jquery.steps.js" />
+    <None Include="wwwroot\admin\bower_components\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\admin\bower_components\jscolor\jscolor.js" />
+    <None Include="wwwroot\admin\bower_components\jstree\dist\jstree.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightbox2\dist\js\lightbox.js" />
+    <None Include="wwwroot\admin\bower_components\lightbox2\dist\js\lightbox.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lg-autoplay.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lg-fullscreen.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lg-hash.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lg-pager.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lg-thumbnail.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lg-video.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lg-zoom.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\demo\js\lightgallery.min.js" />
+    <None Include="wwwroot\admin\bower_components\lightgallery\dist\fonts\lgd641.svg" />
+    <None Include="wwwroot\admin\bower_components\long-press\js\app.js" />
+    <None Include="wwwroot\admin\bower_components\long-press\js\jquery.longpress.js" />
+    <None Include="wwwroot\admin\bower_components\long-press\js\jquery.mousewheel.js" />
+    <None Include="wwwroot\admin\bower_components\long-press\js\plugins.js" />
+    <None Include="wwwroot\admin\bower_components\modernizr\feature-detects\css-scrollbars.js" />
+    <None Include="wwwroot\admin\bower_components\modernizr\modernizr.js" />
+    <None Include="wwwroot\admin\bower_components\moment\min\moment.min.js" />
+    <None Include="wwwroot\admin\bower_components\moment\moment.js" />
+    <None Include="wwwroot\admin\bower_components\morris.js\morris.js" />
+    <None Include="wwwroot\admin\bower_components\multiselect\js\jquery.multi-select.js" />
+    <None Include="wwwroot\admin\bower_components\nvd3\build\nv.d3.js" />
+    <None Include="wwwroot\admin\bower_components\offline\offline.min.js" />
+    <None Include="wwwroot\admin\bower_components\owl.carousel\dist\owl.carousel.min.js" />
+    <None Include="wwwroot\admin\bower_components\peity\jquery.peity.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.animate.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.buttons.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.callbacks.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.confirm.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.desktop.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.history.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.mobile.js" />
+    <None Include="wwwroot\admin\bower_components\pnotify\dist\pnotify.nonblock.js" />
+    <None Include="wwwroot\admin\bower_components\popper.js\dist\umd\popper.min.js" />
+    <None Include="wwwroot\admin\bower_components\raphael\raphael.min.js" />
+    <None Include="wwwroot\admin\bower_components\rickshaw\rickshaw.js" />
+    <None Include="wwwroot\admin\bower_components\seiyria-bootstrap-slider\dist\bootstrap-slider.js" />
+    <None Include="wwwroot\admin\bower_components\select2\dist\js\select2.full.min.js" />
+    <None Include="wwwroot\admin\bower_components\slick-carousel\slick\fonts\slick.svg" />
+    <None Include="wwwroot\admin\bower_components\slick-carousel\slick\slick.min.js" />
+    <None Include="wwwroot\admin\bower_components\Sortable\Sortable.js" />
+    <None Include="wwwroot\admin\bower_components\spectrum\spectrum.js" />
+    <None Include="wwwroot\admin\bower_components\stroll\js\stroll.js" />
+    <None Include="wwwroot\admin\bower_components\swiper\package\js\swiper.min.js" />
+    <None Include="wwwroot\admin\bower_components\switchery\dist\switchery.min.js" />
+    <None Include="wwwroot\admin\bower_components\underscore\underscore-min.js" />
   </ItemGroup>
 
 </Project>

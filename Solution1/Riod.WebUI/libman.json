@@ -17,6 +17,10 @@
     {
       "library": "toastr.js@2.1.4",
       "destination": "wwwroot/libs/toastr.js/"
+    },
+    {
+      "library": "sweetalert@2.1.2",
+      "destination": "wwwroot/libs/sweetalert/"
     }
   ]
 }
