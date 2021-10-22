@@ -1,0 +1,158 @@
+﻿@model ShowViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    .fixrow {
+        width: 70px;
+        max-width: 70px;
+        text-align: center;
+    }
+
+    .btnfix {
+        max-width: 43px;
+    }
+
+        .btnfix i {
+            margin-right: 0;
+        }
+</style>
+<div class="page-header">
+    <div class="row align-items-end">
+        <div class="col-lg-8">
+            <div class="page-header-title">
+                <div class="d-inline">
+                    <h4>Bootstrap Basic Tables</h4>
+                    <span>
+                        lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="page-header-breadcrumb">
+                <ul class="breadcrumb-title">
+                    <li class="breadcrumb-item" style="float: left;">
+                        <a href="../index.html"> <i class="feather icon-home"></i> </a>
+                    </li>
+                    <li class="breadcrumb-item" style="float: left;">
+                        <a href="#!">Bootstrap Table</a>
+                    </li>
+                    <li class="breadcrumb-item" style="float: left;">
+                        <a href="#!">Basic Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page-header end -->
+<!-- Page-body start -->
+<div class="page-body">
+    <!-- Basic table card start -->
+    <div class="card">
+        <div class="card-header">
+            <h5>Basic Table</h5>
+            <span>use class <code>table</code> inside table element</span>
+
+        </div>
+        <div class="card-block table-border-style">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="fixrow">#</th>
+                            <th class="aftercl">Question</th>
+                            <th class="aftercl">Answer</th>
+                            <th><a class="float-right" asp-action="create">Yenisini yarat</a></th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Faqss.Any())
+                        {
+                            @foreach (var item in Model.Faqss)
+                            {
+                        <tr>
+
+                            <th class="fixrow" scope="row">@item.Id</th>
+                            <td>@item.Question</td>
+                            <td>@item.Answer</td>
+                            <td class="cell-operation float-right">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning btnfix btn-square text-white">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info btnfix btn-square text-white">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a onclick="removeEntity(@item.Id)" class="btn btn-sm btn-danger btnfix btn-square text-white">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+
+
+                                <td colspan="3">
+                                    <div class="alert alert-warning border-warning">
+                                        <p>Melumat Yoxdur!</p>
+                                        <a asp-action="Create">Yenisini yarat</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Basic table card end -->
+
+</div>
+
+@section addjs{
+    <script src="~/libs/sweetalert/sweetalert.min.js"></script>
+    <script>
+
+    function removeEntity(entid, entname) {
+        swal({
+            title: "Diqqet",
+            text:`'${entname}'-adli brendi silmek isdediyinizden eminsiniz?` ,
+            icon: "warning",
+            dangerMode: true,
+            buttons:["no","yes"]
+        })
+            .then(willDelete => {
+                if (willDelete) {
+                    $.ajax({
+                        url: `@Url.Action("Delete")/${entid}`,
+                        type: 'POST',
+                        data: {
+                            id:entid
+                        },
+                        contentType: 'application/x-www-form-urlencoded',
+                        dataType: 'json',
+                        success: function (response) {
+                            console.log(response)
+                            window.location.reload();
+                        },
+                        error: function (response) {
+                            console.warn(response)
+                        }
+
+                    });
+                }
+            });
+    }
+    </script>
+}
+
+

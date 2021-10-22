@@ -12,5 +12,6 @@ namespace Riod.WebUI.Views.ViewModels
         public List<Color> Colors { get; set; }
         public List<ProductSize> Products { get; set; }
         public List<Category> Categories { get; set; }
+        public List<Faq> Faqss { get; set; }
     }
 }
