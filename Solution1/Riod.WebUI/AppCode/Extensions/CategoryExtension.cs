@@ -40,6 +40,15 @@ namespace Riod.WebUI.AppCode.Extensions
                 sb.Append("</li>");
             }
         }
-        
+        static public IEnumerable<Category>  GetCategoriesChildren(this Category parent) {
+
+            if(parent.ParentId!=null)
+            yield return parent;
+            foreach (var child in parent.Children.SelectMany(c=>c.GetCategoriesChildren()))
+            {
+                yield return child;
+            }
+            
+        }
     }
 }
